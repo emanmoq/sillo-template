@@ -15,6 +15,7 @@ body {
     margin: 0;
     position: relative;
     font-family: var(--font-famiy);
+    overflow-x: hidden;
 }
 
 img {
@@ -458,7 +459,7 @@ ul {
     padding: 26px 0
 }
 
-.popularProduct .productCol {
+.productCol {
     margin: 0;
     padding: 0
 }
@@ -473,6 +474,7 @@ ul {
     border-radius: 4px;
     display: block;
     transition: all .5s;
+    background-color: white;
 }
 
 .productBox .categImg {
@@ -489,8 +491,8 @@ ul {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.sale {
-    position: absolute;
+.sale,
+.bestSaletag {
     width: 71px;
     height: 24px;
     top: 8px;
@@ -505,9 +507,12 @@ ul {
     color: #FFFFFF;
     display: flex;
     justify-content: center;
+    margin-right: 15px;
+    float: left
 }
 
-.sale span {
+.sale span,
+.bestSaletag span {
     align-self: center;
 }
 
@@ -523,7 +528,6 @@ ul {
 
 .oldNewPrice span {
     margin-right: 5px;
-    float: left;
     font-size: 1em;
     font-weight: 700;
     color: black
@@ -598,12 +602,664 @@ ul {
     fill: white
 }
 
-.offersSec {
+.offersBox {
     width: 100%;
     height: 486px;
     border-radius: 8px;
-    padding:15px
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
 }
-.blueOffer{
+
+.blueOffer {
     background: linear-gradient(180deg, #337DBC 0%, rgba(51, 125, 188, 0) 100%);
+}
+
+.grayOffer {
+    background: linear-gradient(180deg, #5C5966 0%, rgba(92, 89, 102, 0) 100%);
+}
+
+.yellowOffer {
+
+    background: linear-gradient(180deg, #FED001 0%, rgba(254, 208, 1, 0) 100%);
+}
+
+.offersBox span {
+    color: white;
+}
+
+.offersBox h4 {
+    color: white;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.timeCounterDwon span {
+    font-size: 1.25em;
+    color: white;
+
+}
+
+.timeCounterDwon i {
+    display: block;
+    font-size: .875em;
+    color: white;
+    margin-top: 7px;
+}
+
+.timeCounterDwon div {
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.timeCounterDwon div span {
+    position: relative;
+}
+
+.timeCounterDwon div span:after {
+    content: ":";
+    color: white;
+    display: inline-block;
+    right: -15px;
+    position: absolute
+}
+
+.timeCounterDwon div:last-child span::after {
+    display: none;
+}
+
+.offersSec .container {
+    padding: 0;
+}
+
+.offerBtn {
+    background-color: var(--secondMainColor);
+    color: white;
+    font-size: 1.125em;
+    margin: auto;
+    margin-top: 26px;
+    margin-bottom: 14px;
+    width: 132px;
+    height: 38px;
+    border-radius: 30px;
+    border: 1px solid var(--secondMainColor);
+}
+
+.offerBtn:hover {
+    background-color: transparent;
+    color: var(--secondMainColor);
+
+
+}
+
+.offersBox h6 {
+    font-size: 1.25em;
+    color: white;
+    margin-top: 23px
+}
+
+.offersBox h6 span {
+    color: #FF8A00
+}
+
+.offersBox.yellowOffer h6 span {
+    background-color: #000;
+    color: #FED727;
+    padding: 4px 9px;
+    border-radius: 4px;
+}
+
+.offersBox.yellowOffer h6 .offersBox.yellowOffer span,
+.offersBox.yellowOffer h4 {
+    color: black
+}
+
+.offersSec {
+    padding-bottom: 55px;
+}
+
+.OfferImg {
+    height: 246px;
+    width: 100%;
+}
+
+.OfferImg img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+/************************ Best Seller ***************/
+.bestSeller {
+    background-color: #F7F7F7;
+    padding: 28px 0;
+}
+
+.saleCont {
+    position: absolute;
+    left: 8px;
+    top: 8px
+}
+
+.bestSaletag {
+    background-color: #2388FE;
+}
+
+.bestSellerBox .bestSellerBoxImg {
+    width: 270px;
+    margin: auto;
+    margin-bottom: 27px;
+    height: 270px;
+}
+
+.bestSellerBox .bestSellerBoxImg img {
+
+    object-fit: cover;
+}
+
+.bestSellerBox h4 {
+    color: var(--secondMainColor);
+    margin-top: 21px;
+    text-align: center;
+    font-size: 1.125em;
+    margin-bottom: 10px;
+}
+
+.bestSellerBox .saleCont {
+    left: 24px;
+    top: 24px
+}
+
+.bestSellerBox {
+    padding: 12px;
+    text-align: center;
+    height: 600px;
+}
+
+.bestSellerBox .oldNewPrice {
+    font-size: 1.25em;
+}
+
+.rateNum {
+    font-size: 1.125em;
+    color: #BCBCBC;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.addCartSellerBtn {
+    width: 270px;
+    margin-top: 0;
+}
+
+.addCartSellerBtn:hover svg path {
+    fill: var(--secondMainColor)
+}
+
+.addCartSellerBtn i {
+    align-self: center;
+    margin-left: 5px;
+}
+
+.timeCounterDwon h6 {
+    margin-bottom: 8px;
+    font-size: 1.125em;
+    color: #BCBCBC;
+}
+
+.bigsaleBoxRating {
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: center;
+}
+
+.ratingFeed {
+    align-self: center;
+}
+
+.bigsaleBoxTime span,
+.bigsaleBoxTime div span:after {
+    color: black
+}
+
+.bigsaleBoxTime i {
+    color: #9A9A9A;
+}
+
+.addtoCartBtnCont {
+    position: relative;
+    display: flex
+}
+
+.wishIcon {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background: #F2F2F2;
+    display: flex;
+    align-self: center;
+    display: none;
+}
+
+.wishIcon svg {
+    align-self: center;
+}
+
+.wishIcon:hover {
+    background-color: var(--secondMainColor);
+}
+
+.wishIcon:hover svg path {
+    fill: white
+}
+
+.bestSellerBox:hover .wishIcon {
+    display: flex;
+}
+
+/*************************************************/
+.offersAdvertisement .container {
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.offersAdvertisement {
+    padding: 25px 0 19px
+}
+
+.advCont h6 {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1.125em;
+    font-weight: bold;
+}
+
+.advCont h4 {
+    color: white;
+    margin-bottom: 7px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.advCont h4 span {
+    color: var(--secondMainColor);
+    margin-right: 5px;
+}
+
+.advCont p {
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 28px;
+    color: #CCCCCC;
+    margin: 0;
+}
+
+.advCont .offerBtn {
+    margin: 0;
+    margin-top: 24px;
+    width: 132px;
+    height: 38px;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+/*****************************************/
+.FeaturedProduct {
+    padding-top: 0;
+    padding-bottom: 35px;
+}
+
+.ClientsTestimonials {
+    background: #F2F2F2;
+    padding: 20px;
+}
+
+.title {
+    font-weight: 700;
+    margin-bottom: 22px;
+    color: black;
+    font-size: 1.375em;
+}
+
+.testmonialCar {
+    position: relative;
+}
+
+.TestimonialsItem {
+    height: 215px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 17px 14px;
+    border: 1px solid transparent
+}
+
+.testIcon {
+    margin-bottom: 13px;
+}
+
+.TestimonialsItem p {
+    font-size: .875em;
+    color: #949494;
+    font-weight: bold;
+    margin-bottom: 16px;
+    max-height: 80px;
+    overflow: hidden;
+    line-height: 16px;
+}
+
+.testNameDesc {
+    display: flex;
+    float: left;
+}
+
+.testDetails {
+    display: flex;
+}
+
+.clientRating {
+    margin-left: auto;
+    align-self: center;
+    float: right;
+
+}
+
+.testImg {
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    align-self: center;
+    border-radius: 50%;
+    margin-right: 11px;
+}
+
+.testImg img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.testmName {
+    align-self: center;
+}
+
+.testmName h6 {
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.testmName span {
+    font-size: .875em;
+    font-weight: 700;
+    opacity: .5;
+}
+
+.testmonialCar .owl-stage-outer {
+    overflow: visible;
+}
+
+.testmonialCar .owl-stage-outer .owl-item {
+    opacity: 0;
+}
+
+.testmonialCar .owl-stage-outer .owl-item.active {
+    opacity: 1;
+}
+
+.TestimonialsItem:hover {
+    transition: all .5s;
+}
+
+.TestimonialsItem:hover {
+    border: 1px solid var(--secondMainColor);
+    transition: all .5s;
+    margin-top: -5px;
+    box-shadow: 0 0 10px var(--box-shadow);
+}
+
+.TestimonialsItem:hover .testmName h6 {
+    color: var(--secondMainColor);
+}
+
+.testmonialCar .owl-nav {
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+
+.testmonialCar.owl-carousel .owl-nav button.owl-next,
+.testmonialCar.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--main-color)
+}
+
+.testmonialCar.owl-carousel .owl-nav button.owl-next {
+    right: 0
+}
+
+.testmonialCar.owl-carousel .owl-nav button.owl-prev {
+    right: 50px
+}
+
+.testmonialCar.owl-carousel .owl-nav button.owl-next i,
+.testmonialCar.owl-carousel .owl-nav button.owl-prev i {
+    color: var(--main-color);
+}
+
+.testmonialCar.owl-carousel .owl-nav button.owl-next:hover i,
+.testmonialCar.owl-carousel .owl-nav button.owl-prev:hover i {
+
+    color: white
+}
+
+.testmonialCar.owl-carousel .owl-nav button.owl-next:hover,
+.testmonialCar.owl-carousel .owl-nav button.owl-prev:hover {
+    background-color: var(--main-color);
+}
+
+button:focus {
+    outline: 0;
+}
+
+/**************************************************/
+.OurPartnersSec {
+    padding: 32px 0
+}
+
+.ourPartnerImg {
+    width: 100%;
+    height: 60px;
+    transition: all .5s;
+}
+.ourPartnerImg:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+}
+.ourPartnerImg img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/*******************************************************/
+.FollowCarItem {
+    height: 273px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.followOverlay {
+    position: absolute;
+    width: 0;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    background: rgba(21, 18, 18, 0.7);
+    top: 50%;
+    right: 50%;
+    left: 50%;
+    bottom: 50%;
+    z-index: 1;
+    transition: all .5s;
+}
+
+.FollowCarItem img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.FollowInstagram {
+    padding: 34px 0;
+}
+
+.followOverlay a {
+    align-self: center;
+    color: white;
+    display: none;
+    transition: all .5s;
+    font-size: 30px;
+}
+
+.followOverlay:hover a {
+    color: var(--secondMainColor);
+    transition: all .5s;
+
+}
+
+.FollowCarItem:hover .followOverlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    opacity: 1;
+    transition: all .5s;
+}
+
+.FollowCarItem:hover .followOverlay a {
+    display: block;
+}
+
+/*******************************************************/
+.subscribeSec {
+    padding: 27px 0;
+    background: #F5F5F5;
+}
+
+.subscribeSec h6 {
+    font-size: 1.375em;
+    font-weight: 400;
+    margin-bottom: 19px;
+}
+
+.subscribeSec p {
+    margin-bottom: 0;
+    font-size: 1em;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.formSuvContainer{
+    height: 100%;
+    display: flex;
+}
+.subscribeForm{
+    position: relative;
+ align-self: center;
+    margin: 0;
+    height: 48px;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+}
+.form-group{
+    width: 100%;
+    height: 100%;
+}
+.subscribeFormControl{
+    height: 48px;
+    width: 100%;
+    background-color: white;
+    border:0
+}
+.subscribeBtn{
+    position: absolute;
+    background-color: var(--secondMainColor);
+    right: 0;
+    top:0;
+    border-radius: 0px 30px 30px 0px;
+    width: 128px;
+    height: 100%;
+    border: 0;
+    font-size: 1.125em;
+    color:white;
+    font-weight: bold;
+    border:1px solid var(--secondMainColor)
+}
+.subscribeFormControl::placeholder{
+    font-weight: 700;
+    font-size: 16px;
+    opacity: .38;
+}
+.subscribeBtn:hover{
+    background-color:transparent;
+    color:var(--secondMainColor)
+}
+.socialIconsSub{
+    display: flex;
+    height: 100%;
+}
+.socialIconsSub a{
+    color:#B8B8B8;
+    font-size: 24px;
+}
+.socialIconsSub li{
+    align-self: center;
+    margin-right: 25px;
+}
+.socialIconsSub li:hover a{
+    color:var(--secondMainColor);
+}
+.socialIconsSub li  i{
+    transition: all .5s;
+}
+.socialIconsSub li:hover  i{
+    transform: scale(1.2);
+    transition: all .5s;
+}
+/********************************************/
+footer{
+    padding:32px 0 10px;
+    background-color: var(--main-color);
+    color:white
+}
+.footerLogo{
+width: 84px;
+height: 95px;
+margin-bottom: 14px;
+}
+footer p,h6{
+    margin:0;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 19px;
+}
+footer p{
+    margin-bottom: 19px;
+}
+.footerList{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
 }
