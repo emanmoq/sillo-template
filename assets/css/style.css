@@ -915,7 +915,12 @@ ul {
     padding-top: 0;
     padding-bottom: 35px;
 }
-
+.FeaturedProduct .productBox:hover{
+    border: 1px solid var(--secondMainColor);
+    box-shadow: 1px 7px 2px var(--box-shadow);
+    margin-top: -5px;
+    transition: all .5s;
+}
 .ClientsTestimonials {
     background: #F2F2F2;
     padding: 20px;
@@ -1240,7 +1245,7 @@ button:focus {
 }
 /********************************************/
 footer{
-    padding:32px 0 10px;
+    padding-top:32px;
     background-color: var(--main-color);
     color:white
 }
@@ -1262,4 +1267,33 @@ footer p{
     list-style-type: none;
     margin:0;
     padding: 0;
+}
+.footerList h5{
+margin-bottom: 21px;
+font-weight: 700;
+font-size: 1.125em;
+}
+.footerList li{
+    list-style-type: none;
+    margin-bottom: 17px;
+    font-size: 1em;
+    font-weight: 700;
+  
+}.footerList li a{
+    color:white;
+    opacity: .8;
+}
+.footerList li:hover a{
+    opacity: 1;
+    color:var(--secondMainColor)
+}
+
+.copy{
+    margin-top:19px;
+    padding:11px 0;
+    border:1px solid rgba(255,255,255,.38);
+    text-align: center;
+    font-size:1em;
+    font-weight: 700;
+    
 }
