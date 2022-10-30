@@ -142,7 +142,6 @@ ul {
     z-index: 1;
     top: 10px;
     left: 12px;
-
 }
 
 .searchInput {
@@ -915,12 +914,14 @@ ul {
     padding-top: 0;
     padding-bottom: 35px;
 }
-.FeaturedProduct .productBox:hover{
+
+.FeaturedProduct .productBox:hover {
     border: 1px solid var(--secondMainColor);
     box-shadow: 1px 7px 2px var(--box-shadow);
     margin-top: -5px;
     transition: all .5s;
 }
+
 .ClientsTestimonials {
     background: #F2F2F2;
     padding: 20px;
@@ -1086,10 +1087,12 @@ button:focus {
     height: 60px;
     transition: all .5s;
 }
-.ourPartnerImg:hover{
+
+.ourPartnerImg:hover {
     transform: scale(1.1);
     transition: all .5s;
 }
+
 .ourPartnerImg img {
     height: 100%;
     object-fit: cover;
@@ -1175,125 +1178,607 @@ button:focus {
     line-height: 19px;
     color: rgba(0, 0, 0, 0.5);
 }
-.formSuvContainer{
+
+.formSuvContainer {
     height: 100%;
     display: flex;
 }
-.subscribeForm{
+
+.subscribeForm {
     position: relative;
- align-self: center;
+    align-self: center;
     margin: 0;
     height: 48px;
     border-radius: 30px;
     overflow: hidden;
     width: 100%;
 }
-.form-group{
+
+.form-group {
     width: 100%;
     height: 100%;
 }
-.subscribeFormControl{
+
+.subscribeFormControl {
     height: 48px;
     width: 100%;
     background-color: white;
-    border:0
+    border: 0
 }
-.subscribeBtn{
+
+.subscribeBtn {
     position: absolute;
     background-color: var(--secondMainColor);
     right: 0;
-    top:0;
+    top: 0;
     border-radius: 0px 30px 30px 0px;
     width: 128px;
     height: 100%;
     border: 0;
     font-size: 1.125em;
-    color:white;
+    color: white;
     font-weight: bold;
-    border:1px solid var(--secondMainColor)
+    border: 1px solid var(--secondMainColor)
 }
-.subscribeFormControl::placeholder{
+
+.subscribeFormControl::placeholder {
     font-weight: 700;
     font-size: 16px;
     opacity: .38;
 }
-.subscribeBtn:hover{
-    background-color:transparent;
-    color:var(--secondMainColor)
+
+.subscribeBtn:hover {
+    background-color: transparent;
+    color: var(--secondMainColor)
 }
-.socialIconsSub{
+
+.socialIconsSub {
     display: flex;
     height: 100%;
 }
-.socialIconsSub a{
-    color:#B8B8B8;
+
+.socialIconsSub a {
+    color: #B8B8B8;
     font-size: 24px;
 }
-.socialIconsSub li{
+
+.socialIconsSub li {
     align-self: center;
     margin-right: 25px;
 }
-.socialIconsSub li:hover a{
-    color:var(--secondMainColor);
+
+.socialIconsSub li:hover a {
+    color: var(--secondMainColor);
 }
-.socialIconsSub li  i{
+
+.socialIconsSub li i {
     transition: all .5s;
 }
-.socialIconsSub li:hover  i{
+
+.socialIconsSub li:hover i {
     transform: scale(1.2);
     transition: all .5s;
 }
+
 /********************************************/
-footer{
-    padding-top:32px;
+footer {
+    padding-top: 32px;
     background-color: var(--main-color);
-    color:white
+    color: white
 }
-.footerLogo{
-width: 84px;
-height: 95px;
-margin-bottom: 14px;
+
+.footerLogo {
+    width: 84px;
+    height: 95px;
+    margin-bottom: 14px;
 }
-footer p,h6{
-    margin:0;
+
+footer p,
+h6 {
+    margin: 0;
     font-size: 1em;
     font-weight: 700;
     line-height: 19px;
 }
-footer p{
+
+footer p {
     margin-bottom: 19px;
 }
-.footerList{
+
+.footerList {
     list-style-type: none;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
-.footerList h5{
-margin-bottom: 21px;
-font-weight: 700;
-font-size: 1.125em;
+
+.footerList h5 {
+    margin-bottom: 21px;
+    font-weight: 700;
+    font-size: 1.125em;
 }
-.footerList li{
+
+.footerList li {
     list-style-type: none;
     margin-bottom: 17px;
     font-size: 1em;
     font-weight: 700;
-  
-}.footerList li a{
-    color:white;
-    opacity: .8;
-}
-.footerList li:hover a{
-    opacity: 1;
-    color:var(--secondMainColor)
+
 }
 
-.copy{
-    margin-top:19px;
-    padding:11px 0;
-    border:1px solid rgba(255,255,255,.38);
+.footerList li a {
+    color: white;
+    opacity: .8;
+}
+
+.footerList li:hover a {
+    opacity: 1;
+    color: var(--secondMainColor)
+}
+
+.copy {
+    margin-top: 19px;
+    padding: 11px 0;
+    border: 1px solid rgba(255, 255, 255, .38);
     text-align: center;
-    font-size:1em;
+    font-size: 1em;
     font-weight: 700;
+
+}
+
+/*******************************************/
+.breadcrumbContainer {
+    background: #AEAEAE;
+    padding: 11px 0;
+}
+
+.breadcrumb {
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    margin-bottom: 0;
+}
+
+.breadcrumb-item a {
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.breadcrumb-item:hover a {
+    color: var(--secondMainColor)
+}
+
+.breadcrumb-item.active {
+    color: var(--secondMainColor)
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "\f054";
+    font-weight: 400;
+    font-family: "FontAwesome";
+    color:white;
+    font-size: 12px;
+    margin:0 10px
+}
+
+.categoriesPage {
+    padding: 35px 0 57px
+}
+
+.filterBtn {
+    background-color: var(--secondMainColor);
+    width: 129px;
+    height: 45px;
+    color: white;
+    font-size: .875em;
+    border-radius: 43px;
+    margin-bottom: 38px;
+    border: 1px solid var(--secondMainColor)
+}
+
+.filterBtn svg {
+    align-self: center;
+    margin-left: 20px
+}
+
+.filterBtn:hover {
+    background-color: transparent;
+    color: var(--secondMainColor)
+}
+
+.filterBtn:hover svg,
+.filterBtn:hover svg path {
+    fill: var(--secondMainColor)
+}
+
+.FilterList li {
+    border-bottom: 1px solid #E6E6E6;
+    padding: 18px 0
+}
+
+.FilterList li:last-child {
+    border-bottom: 0;
+}
+
+.radioBtnContainer {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radioBtnContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.radioBtnContainer .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radioBtnContainer:hover input~.checkmark {
+    background-color: white;
+}
+
+/* When the radio button is checked, add a blue background */
+.radioBtnContainer input:checked~.checkmark {
+    background-color: white;
+    border: 1px solid var(--secondMainColor)
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radioBtnContainer .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radioBtnContainer input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radioBtnContainer .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--secondMainColor);
+}
+
+.checkContainer .checkmark:after {
+    left: 4px;
+    top: 2px;
+    width: 7px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-radius: 0;
+}
+
+.checkContainer {
+    font-size: 14px;
+    color: #1A1A1A
+}
+
+.checkContainer .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+
+}
+
+.checkContainer input:checked~.checkmark {
+    background-color: var(--secondMainColor);
+}
+
+/**************************************/
+
+.FilterList a i {
+    float: right;
+}
+
+.radioBtnContainer {
+    font-size: 14px;
+    font-style: normal;
+}
+
+.radioBtnContainer span {
+    color: #808080;
+    margin-left: 2px
+}
+
+.radioBtnContainer i {
+    font-style: normal;
+    margin-left: 5px;
+}
+
+.FilterList ul li {
+    border-bottom: 0;
+    margin-bottom: 18px;
+    padding: 0;
+}
+
+.filterContent {
+    padding-top: 20px
+}
+
+.FilterList li a {
+    font-size: 20px;
+    color: #1A1A1A
+}
+
+.FilterList li a h6 {
+    display: inline-block;
+}
+
+.priceLabel {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #4D4D4D;
+    display: inline-block;
+}
+
+.priceRange {
+    display: inline-block;
+    border: 0;
+    color: #1A1A1A;
+    font-size: 14px;
+}
+
+.priceRange:focus {
+    outline: 0;
+    box-shadow: 0;
+}
+
+#price-range {
+    background-color: #E6E6E6;
+    height: 6px;
+}
+
+.ui-widget-header {
+    background-color: var(--secondMainColor);
+    border: 0
+}
+
+.ui-slider .ui-slider-handle {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--secondMainColor);
+    background-color: white;
+    border-radius: 50%;
+    top: -7px
+}
+
+.ui-slider .ui-slider-handle:hover,
+.ui-slider .ui-slider-handle:focus {
+    border: 2px solid var(--secondMainColor);
+    box-shadow: none;
+    outline: 0;
+}
+
+.FilterTagCont {
+    display: inline-block;
+    margin-right: 14px;
+    margin-bottom: 8px;
+}
+
+.FilterTagCont:last-child {
+    margin-right: 0;
+}
+
+.FilterTagCont span {
+    align-self: center;
+}
+
+.FilterTagCont input {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+
+.FilterTag {
+    display: inline-flex;
+    padding: 2px 10px;
+    background-color: #F2F2F2;
+    font-size: 14px;
+    color: #1A1A1A;
+    font-weight: 400;
+    border-radius: 30px;
+}
+
+.FilterTagCont input:checked~.FilterTag {
+    background-color: var(--secondMainColor);
+    color: white
+}
+
+.SalesProductList {
+    margin-top: 32px;
+}
+
+.SalesProductList h6 {
+    font-size: 20px;
+    color: #1A1A1A;
+    margin-bottom: 14px;
+}
+
+.SalesProductList li {
+    margin-bottom: 14px;
+}
+
+.SalesProductBox {
+    height: 112px;
+    padding: 12px;
+    display: flex;
+}
+
+.SalesProductBox .categImg {
+    width: 87px;
+    height: 87px;
+    margin: 0;
+    margin-right: 33px;
+}
+
+.SalesProductBox .categImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.productCategDetails {
+    align-self: center;
+}
+
+.SalesProductBox .productCategDetails h4 {
+    margin-top: 0
+}
+
+.categoriesPage .productBox {
+    margin-bottom: 25px;
+}
+
+.filterHeader {
+    display: flex
+}
+
+.filterHeader .selectric-select {
+    width: 168;
+    margin-left: 12px;
+    min-height: 40px;
+    height: 40px !important;
+    border: 1px solid #E6E6E6;
+}
+
+.selectric .label,
+.selectric-items li {
+    font-size: 14px;
+    color: #4D4D4D
+}
+
+.selectric-items li:hover {
+    color: var(--secondMainColor)
+}
+
+.selectric-items li.selected {
+    display: none;
+}
+
+.SortList {
+    align-self: center;
+    display: flex;
+}
+
+.filterHeader span {
+    font-size: 1em;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin-left: auto;
+
+}
+
+.filterHeader span span {
+    margin-left: 5px;
+    color: #666666;
+    font-weight: 500;
+}
+
+.filterHeader {
+    margin-bottom: 35px;
+}
+
+.categoriesPage .productBox:hover {
+    margin-top: -5px;
+    box-shadow: 1px 7px 2px var(--box-shadow);
+
+}
+
+.filterHeader p {
+    float: left;
+    font-size: .875em;
+    color: #808080;
+    align-self: center;
+    margin-bottom: 0;
+}
+
+.selectric-items {
+    box-shadow: none;
+}
+.pagination {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.pagination .page-item .page-link{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1em;
+    font-weight: 500;
+    border:0;
+    color:#666666;
     
+}
+.pagination .page-item{
+    margin-left:12px 
+}
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+    border: 1px solid #E6E6E6;
+    background-color: transparent;
+}
+
+.pagination .page-item .page-link{
+    align-self: center;
+}
+
+.pagination .page-item.disabled .page-link ,.pagination .page-item.disabled:hover .page-link{
+    background: #F2F2F2;
+    color:#666666;
+    cursor: auto;
+}
+.pagination .page-item.active .page-link,.pagination .page-item:hover .page-link{
+    background-color: var(--secondMainColor);
+    color:white
+}
+.selectric .button{
+font-size: 1em;
+top:5px;
+color:#4D4D4D
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn span{
+    align-self: center;
 }
