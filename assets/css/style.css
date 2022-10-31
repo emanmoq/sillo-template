@@ -2117,5 +2117,10 @@ footer p {
 .modal .close{
     position: absolute;
     right: 20px;
-    top:20px
+    top:20px;
+    z-index: 99999;
+}
+/***********************************************************************/
+.productDetailsPageHeader{
+    margin-bottom: 70px;
 }
