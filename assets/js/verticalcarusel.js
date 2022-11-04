@@ -3149,7 +3149,7 @@
 
 
 
-$("#productViewSlider.owl-carousel").owlCarousel({
+$("#productViewSlider").owlCarousel({
     loop: true,
     autoplay: true,
 	vertical:true,

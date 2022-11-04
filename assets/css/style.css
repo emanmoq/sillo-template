@@ -1813,7 +1813,7 @@ footer p {
 
 .productImageList {
     height: 400px;
-    margin-top:30px
+    margin-top: 30px
 }
 
 #viewProduct .modal-dialog {
@@ -1835,8 +1835,8 @@ footer p {
 }
 
 .producViewImage img {
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
     object-fit: cover;
 }
 
@@ -1845,6 +1845,7 @@ footer p {
     height: 100%;
     width: 100%;
     top: 0;
+    z-index: -1;
     text-align: center;
     color: #999999;
 }
@@ -2087,15 +2088,17 @@ footer p {
 .plusMinusProductContainer .wishIcon:hover {
     background-color: var(--secondMainColor);
 }
-.categTags{
-    margin-top:50px
+
+.categTags {
+    margin-top: 50px
 }
+
 .categTags h6 {
     font-size: .875em;
     color: #1A1A1A;
     display: inline-block;
     margin-right: 6px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .categTags span {
@@ -2104,23 +2107,192 @@ footer p {
     font-size: .875em;
     margin-right: 5px;
 }
-.categTags li{
+
+.categTags li {
     margin-bottom: 12px;
 }
-.categTags span.active{
+
+.categTags span.active {
     color: #1A1A1A;
     text-decoration: underline;
 }
-.categTags li:last-child{
+
+.categTags li:last-child {
     margin-bottom: 0;
 }
-.modal .close{
+
+.modal .close {
     position: absolute;
     right: 20px;
-    top:20px;
+    top: 20px;
     z-index: 99999;
 }
+
 /***********************************************************************/
-.productDetailsPageHeader{
-    margin-bottom: 70px;
+.productDetailsPageHeader {
+    padding-bottom: 70px;
+    padding-top: 55px
+}
+
+.ProductCategDetails {
+    padding-bottom: 60px;
+}
+
+.ProductCategDetails .categPills {
+    box-shadow: 0px 1px 0px #E6E6E6;
+    justify-content: center;
+    padding: 0;
+}
+
+.categPills .nav-link {
+    border: 0;
+    padding: 10px 0;
+    position: relative;
+    font-size: 1em;
+    font-weight: 600;
+    color: #808080;
+    border-radius: 0;
+    margin:0 25px
+}
+
+.categPills .nav-link.active {
+    background-color: transparent;
+    color: var(--secondMainColor);
+    border-bottom: 1px solid var(--secondMainColor);
+}
+
+.categProductCont {
+    padding-top: 52px
+}
+
+.productDescDetails p {
+    font-size: .875em;
+    color: #808080;
+    margin-bottom: 20px;
+}
+
+.productDescDetails ul li {
+    position: relative;
+    margin-bottom: 14px;
+    font-weight: 400;
+    color:#808080
+}
+.productDescDetails ul{
+    margin-bottom: 20px;
+}
+.productDescDetails li:before {
+    content: "\f058";
+    color: var(--secondMainColor);
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-left: 5px;
+    font-size: 20px;
+    margin-right: 8px;
+}
+.productVideo{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.productVideo video{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.discountDetailsBox{
+    width: 100%;
+    display: flex;
+    border: 1px solid #E6E6E6;
+border-radius: 6px;
+height: 95px;
+justify-content: space-between;
+padding:30px 20px
+}
+.discoutProductSide{
+    align-self: center;
+    display: inline-flex;
+}
+.discoutProductSide svg path{
+    fill:var(--secondMainColor)
+}
+.discoutProductSide  i{
+    margin-right: 15px;
+}
+.discountsideDetails h5{
+    margin-bottom: 7px;
+    font-size: .875em;
+    color:#1A1A1A;
+}
+.discountsideDetails span{
+    font-size: 0.8125em;
+    color:#808080;
+}
+.categProductCont .categTags{
+margin-top:0
+}
+.categProductCont .categTags li h6{
+font-weight: 400;
+width: 100px;
+}
+.categProductCont .categTags li  span{
+    color:#666666
+}
+.custopReviewBox{
+    padding:27px 0;
+    border-bottom: 1px solid #E6E6E6;
+}
+.custopReviewBox.noBorder{
+    border-bottom: 0;
+}
+.custopReviewBox span{
+    color: #999999;
+    text-align: right;
+    font-size: .875em;
+    font-weight: 400;
+    float: right;
+}
+.customReiewHeader{
+    display: flex;
+    margin-bottom: 12px;
+}
+.custermName{
+    width: 41px;
+height: 41px;
+border-radius: 50%;
+overflow: hidden;
+}
+.custermName img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.custopReviewBox p{
+    color: #808080;
+    font-size: .875em;
+    font-weight: 400;
+    max-width: 80%;
+}
+.customerReviewDetails{
+    margin-left:12px
+}
+.customerReviewDetails h6{
+    font-size: .875em;
+    color: #1A1A1A;
+}
+.customerReviewDetails .clientRating{
+    float: none;
+}
+
+.loadMoreBtn{
+    width: 138px;
+    height: 48px;
+    background-color: var(--box-shadow);
+    font-size: .875em;
+    color:var(--secondMainColor);border-radius: 43px;
+}
+.loadMoreBtn:hover{
+    background-color: var(--main-color);
+    color:white
 }
