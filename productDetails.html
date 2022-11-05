@@ -158,7 +158,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#" class="cartClick">
                                 <div class="wishIconHeader CartIcon">
                                     <span class="cartNum"><span>0</span></span>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -177,6 +177,119 @@
                                 </div>
                                 <h6>cart</h6>
                             </a>
+                            <div class="shopMenu">
+                                <div class="clearfix">
+                                    <h4>Shopping Card (2)</h4> <button type="button" class="close closeCart"
+                                        data-dismiss="collapse" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <ul class="cartMenuList">
+                                    <li>
+                                        <a href="javaScript:;">
+                                            <div class="cartItemImg">
+                                                <img src="assets/images/p2.png" alt="">
+                                            </div>
+                                            <div class="cartItemDetails">
+                                                <h5>Fresh Indian Orange</h5>
+                                                <p>
+                                                    <span>9KG X</span>
+                                                    <span class="cartItemPrice">
+                                                        15.99
+                                                    </span>
+                                                </p>
+
+                                            </div>
+                                            <span class="close closeCartItem" data-dismiss="collapse"
+                                                aria-label="close"><span aria-hidden="true">&times;</span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javaScript:;">
+                                            <div class="cartItemImg">
+                                                <img src="assets/images/p2.png" alt="">
+                                            </div>
+                                            <div class="cartItemDetails">
+                                                <h5>Fresh Indian Orange</h5>
+                                                <p>
+                                                    <span>9KG X</span>
+                                                    <span class="cartItemPrice">
+                                                        15.99
+                                                    </span>
+                                                </p>
+
+                                            </div>
+                                            <span class="close closeCartItem" data-dismiss="collapse"
+                                                aria-label="close"><span aria-hidden="true">&times;</span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javaScript:;">
+                                            <div class="cartItemImg">
+                                                <img src="assets/images/p2.png" alt="">
+                                            </div>
+                                            <div class="cartItemDetails">
+                                                <h5>Fresh Indian Orange</h5>
+                                                <p>
+                                                    <span>9KG X</span>
+                                                    <span class="cartItemPrice">
+                                                        15.99
+                                                    </span>
+                                                </p>
+
+                                            </div>
+                                            <span class="close closeCartItem" data-dismiss="collapse"
+                                                aria-label="close"><span aria-hidden="true">&times;</span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javaScript:;">
+                                            <div class="cartItemImg">
+                                                <img src="assets/images/p2.png" alt="">
+                                            </div>
+                                            <div class="cartItemDetails">
+                                                <h5>Fresh Indian Orange</h5>
+                                                <p>
+                                                    <span>9KG X</span>
+                                                    <span class="cartItemPrice">
+                                                        15.99
+                                                    </span>
+                                                </p>
+
+                                            </div>
+                                            <span class="close closeCartItem" data-dismiss="collapse"
+                                                aria-label="close"><span aria-hidden="true">&times;</span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javaScript:;">
+                                            <div class="cartItemImg">
+                                                <img src="assets/images/p2.png" alt="">
+                                            </div>
+                                            <div class="cartItemDetails">
+                                                <h5>Fresh Indian Orange</h5>
+                                                <p>
+                                                    <span>9KG X</span>
+                                                    <span class="cartItemPrice">
+                                                        15.99
+                                                    </span>
+                                                </p>
+
+                                            </div>
+                                            <span class="close closeCartItem" data-dismiss="collapse"
+                                                aria-label="close"><span aria-hidden="true">&times;</span></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="shopCartTotal clearfix">
+                                    <span class="TotalItems">5 Products</span>
+                                    <span class="totalItemsPrice">$250.00</span>
+                                </div>
+                                <div class="cartItemsBtn">
+                                    <a href="javaScript" class="btn offerBtn "><span>Checkout</span></a>
+                                    <a href="javaScript" class="btn loadMoreBtn"><span>Go To Cart</span></a>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -251,6 +364,7 @@
                                             stroke-linejoin="round" />
                                     </svg>
                                 </a>
+                            </li>
                             <li class="breadcrumb-item " aria-current="page"><a href="javaScript:;">Categories</a></li>
                             <li class="breadcrumb-item " aria-current="page"><a href="javaScript:;">Bread & Bakery</a>
                             </li>
@@ -319,7 +433,7 @@
                                         Chili pepper
 
                                     </h6>
-                                    <span class="inStock">In Stock
+                                    <span class="available inStock">In Stock
                                     </span>
                                 </div>
                                 <ul class="viewProductRating">
@@ -360,11 +474,11 @@
 
                                     <form action="" class="qty-plus-minus clearfix ">
                                         <button type="button" class="form-control btn-number btnminus"
-                                            disabled="disabled" data-type="minus" data-field="quantity">
+                                              data-type="minus" data-field="quantity">
                                             <i class="fa-solid fa-minus"></i>
                                         </button>
                                         <input id="input-quantity" type="text" name="quantity" value="5"
-                                            class="form-control input-number ">
+                                            class="form-control input-number " disabled>
                                         <input type="hidden" name="product_id" value="43">
                                         <button type="button" class="form-control  btn-number btnplus" data-type="plus"
                                             data-field="quantity">
@@ -1171,7 +1285,7 @@
             e.preventDefault();
             var fieldName = $(this).attr('data-field');
             var type = $(this).attr('data-type');
-            var input = $("input[name='" + fieldName + "']");
+            var input =  $(this).closest(".qty-plus-minus").find("input[name='" + fieldName + "']");
             var currentVal = parseInt(input.val());
             if (!isNaN(currentVal)) {
                 if (type == 'minus') {

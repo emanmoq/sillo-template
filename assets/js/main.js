@@ -133,5 +133,20 @@ $(".FilterList li a").click(function(){
   $(this).parent().find(".filterContent").slideToggle();
   $(this).find('.fa-solid').toggleClass('fa-solid fa-chevron-up  fa-solid fa-chevron-down');
 });
+
+/*******************Close Cart Menu *************/
+/*****************Close Cart Item ***************/
+$(".closeCartItem").click(function(){
+  $(this).closest("li").css("display","none")
+})
+$(".closeCart").click(function(){
+  $(".shopMenu").css("right","-1000px");
+  $(".overlayBody").css("display","none")
+
+})
+$(".cartClick").click(function(){
+  $(".shopMenu").css("right","-100%");
+  $(".overlayBody").css("display","block")
+})
 });
 
