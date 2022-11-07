@@ -148,5 +148,23 @@ $(".cartClick").click(function(){
   $(".shopMenu").css("right","-100%");
   $(".overlayBody").css("display","block")
 })
+$(".awsomeTeamCar").owlCarousel({
+  nav: true,
+  loop: false,
+  margin: 30,
+  navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
+  responsive: {
+    0: {
+      items: 1,
+      nav: false
+    },
+    700: {
+      items: 2,
+    },
+    1000: {
+      items: 3,
+    }
+  }
+});
 });
 

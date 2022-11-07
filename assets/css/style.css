@@ -5,6 +5,7 @@
     --sliderOverlay: rgba(0, 35, 156, 0.6);
     --dotsColor: rgba(0, 35, 156, 0.2);
     --box-shadow: rgba(254, 80, 0, 0.15);
+    --contact-shadow:0px 0px 56px rgba(254, 80, 0, 0.08);
 
 }
 
@@ -2853,7 +2854,7 @@ box-shadow: 0px 1px 0px #E6E6E6;
 }
 .aboutListIcon{
     align-self: center;
-    width: 40px;
+    max-width: 40px;
 }
 .aboutListDetails{
     align-self: center;
@@ -2866,4 +2867,181 @@ box-shadow: 0px 1px 0px #E6E6E6;
 .aboutListDetails span{
     color: #808080;
     font-size: .875em;
+}
+.aboutShopBtn{
+  width: 184px;
+    height: 51px;;
+    margin: 0;
+    margin-top: 32px;
+    
+}
+.aboutCheck{ width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: var(--box-shadow);
+display: inline-flex;
+justify-content: center;
+}
+.aboutListCheck{
+    margin-top: 20px;
+}
+.aboutListCheck li{
+    font-size: .875em;
+    margin-bottom: 16px;
+    font-weight: 400;;
+    color: #666666;
+}
+.aboutCheck i{
+    align-self: center;
+    color:var(--secondMainColor);
+    font-size: 13px;
+}
+.ourAwsomeTeam{
+    background:linear-gradient(180deg, #F2F2F2 0%, #FFFFFF 100%);
+padding-top:50px;
+padding-bottom: 90px
+}
+ .aboutsectionTitle h5{
+    font-size: 3em;
+    font-weight: 600;;
+    margin-bottom: 12px;
+}
+ .aboutsectionTitle p{
+    font-size: 1em;
+    font-weight: 400;
+    color: #666666;
+}
+.ourAwsomeTeam .aboutsectionTitle{
+    margin-bottom: 50px;
+}
+.awomeTeamItem{
+    background: #FFFFFF;
+box-shadow: 0px 20px 48px rgba(254, 80, 0, 0.08);
+border-radius: 8px;
+height: 368px;
+overflow: hidden;
+
+}
+.awsomeTeamImg{
+    height: 280px;
+    margin-bottom: 16px;
+    position: relative;
+
+}
+.awsomeTeamImg img{height: 100%;
+object-fit: cover;}
+.awsomeTeamDetails{
+    padding-left: 20px;
+}
+.awsomeTeamDetails h4{
+    font-weight: 500;
+font-size: 18px;
+margin-bottom: 5px;
+color: #1A1A1A;
+}
+.awsomeTeamDetails span{
+    font-weight: 400;
+font-size: 14px;
+color: #808080;
+}
+.awsomeTeamSocial{
+    display: flex;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    background-color: rgba(0, 0, 0, .2);
+    justify-content: center;
+}
+.awsomeTeamSocial .socialIconsSub{
+    align-self: center;
+    display: none;
+}
+.awsomeTeamSocial .socialIconsSub li{
+width: 40px;
+height: 40px;
+background-color: transparent;
+border-radius: 50%;
+transition: all .5s;
+display: inline-flex;
+justify-content: center;
+}
+.awsomeTeamSocial .socialIconsSub li a{
+    align-self: center;
+}
+.awsomeTeamSocial .socialIconsSub li:hover{
+    background-color: var(--secondMainColor);
+    transition: all .5s;
+}
+.awsomeTeamSocial .socialIconsSub li:hover a{
+    color: white;
+}
+.awsomeTeamSocial .socialIconsSub li a{
+    color: white;
+}
+.awomeTeamItem:hover .socialIconsSub{
+    display: flex;
+    transition: all .5s;
+}
+.awomeTeamItem:hover h4{
+    color:var(--secondMainColor)
+}
+.awsomeTeamCar .owl-stage-outer {
+    overflow: visible;
+}
+
+.awsomeTeamCar .owl-stage-outer .owl-item {
+    opacity: 0;
+}
+
+.awsomeTeamCar .owl-stage-outer .owl-item.active {
+    opacity: 1;
+}
+.awsomeTeamCar  .owl-nav{
+    position: absolute;
+    width: 100%;
+    bottom: 150px;
+}
+.awsomeTeamCar  .owl-nav button.owl-next, .awsomeTeamCar  .owl-nav button.owl-prev{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #FFFFFF;
+border: 1px solid #E6E6E6;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+left: -67px;
+position: absolute;
+}
+.awsomeTeamCar  .owl-nav button.owl-next:hover, .awsomeTeamCar  .owl-nav button.owl-prev:hover{
+    background-color: var(--secondMainColor);
+    color: white;
+}
+.awsomeTeamCar  .owl-nav button.owl-prev{
+    right:-67px;
+    left: auto;
+}
+/******************************************************************/
+.contactInfoBox{
+    background: #FFFFFF;
+box-shadow: var(--contact-shadow);
+border-radius: 8px;
+padding:44px 50px; 
+}
+.contactUsPage{
+    padding: 50px 0;
+}
+.ContactForm h4{
+    font-weight: 600;
+font-size: 24px;
+margin-bottom: 8px;
+color: #1A1A1A;
+
+}
+.ContactForm p{
+    font-weight: 400;
+font-size: 14px;
+margin-bottom: 24px;
+color: #808080;
+max-width: 80%;
 }
