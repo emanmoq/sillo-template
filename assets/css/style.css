@@ -16,6 +16,7 @@ body {
     position: relative;
     font-family: var(--font-famiy);
     overflow-x: hidden;
+    
 }
 
 img {
@@ -2374,6 +2375,9 @@ footer p {
     transition: all .5s;
     animation: ease-in-out;
 }
+.cartMenuListli a{
+    color: #1A1A1A;
+}
 
 .cartMenuList li:last-child {
     border-bottom: 0;
@@ -2716,4 +2720,97 @@ color: #1A1A1A;;
     height: 51px;
     margin-top: 20px;
     margin:0
+}
+.checkOutPage {
+    padding:22px 0 45px
+}
+.checkOutPage h4{
+    font-weight: 600;
+font-size: 1.5em ;
+margin-bottom: 20px;
+}
+
+.chechoutForm label{
+    margin-bottom: 8px;
+    font-size: .875em;
+    color:#1A1A1A
+}
+.chechoutForm .form-control{
+    border: 1px solid #E6E6E6;
+border-radius: 6px;
+height: 49px;
+
+}
+.chechoutForm .form-control::placeholder,.selectric .label, .selectric-items li{
+    font-weight: 400;
+font-size: 16px;
+color: #999999;
+
+}
+.chechoutForm label span{
+ font-Weight:400;
+font-Size:14px
+}
+.chechoutForm .form-group{
+margin-bottom: 16px;
+height: auto;
+}
+.chechoutForm  .selectric-wrapper{
+    float: none;
+    border: 1px solid #E6E6E6;
+    border-radius: 6px;
+    height: 49px;
+}
+.chechoutForm .checkContainer{
+padding-bottom: 32px;
+border-bottom: 1px solid #E6E6E6;
+margin-bottom: 32px;
+
+}
+textarea{
+    resize: none;
+}
+.chechoutForm textarea.form-control{
+    height: 100px;
+}
+.cartTotal h5{
+    margin-top:24px;
+    margin-bottom: 16px;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+.orderSamImg{
+width: 60px;
+height: 60px;
+overflow: hidden;
+margin-right:10px;
+}
+.orderSamImg img{
+    height: 100%;
+    object-fit: cover;
+}
+.order-List-summary li span{
+    display: inline-flex;
+}
+.cartTotal .order-List-summary li{
+box-shadow: none;
+padding:0;
+margin-bottom: 5px;
+display: flex;
+justify-content: space-between;
+}
+.cartTotal .order-List-summary li p{
+    align-self: center;
+}
+.cartTotal .order-List-summary {
+    margin-bottom: 0;
+}
+.order-List-summary li h6{
+    align-self: center;
+    margin: 0;
+    font-size: .875em;
+    font-weight: 400;
+}
+.order-List-summary li h6 span{
+    margin-left: 6px;
 }
