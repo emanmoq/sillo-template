@@ -2814,3 +2814,56 @@ justify-content: space-between;
 .order-List-summary li h6 span{
     margin-left: 6px;
 }
+/********************************************************/
+.aboutPage{
+    padding-top:81px;
+    padding-bottom: 102px;
+}
+.aboutPageText h4{
+    font-size: 3.5em;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+.aboutPageText p{
+    font-weight: 400;
+font-size: .875em;
+line-height: 1;
+color: #666666;
+}
+.aboutgrayBg{
+    background: linear-gradient(180deg, #FAFAFA 0%, #FFFFFF 100%);
+padding:40px 0;
+box-shadow: 0px 1px 0px #E6E6E6;
+}
+.aboutList{
+    margin-top: 24px;
+}
+.aboutList li{
+    display: flex;
+    margin-bottom:10px;
+}
+.aboutListIconImg{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin-right: 16px;
+    background-color:  rgba(254, 80, 0, 0.15);
+    display: inline-flex;
+    justify-content: center;
+}
+.aboutListIcon{
+    align-self: center;
+    width: 40px;
+}
+.aboutListDetails{
+    align-self: center;
+}
+.aboutListDetails p{
+    font-size: 1.125em;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.aboutListDetails span{
+    color: #808080;
+    font-size: .875em;
+}
