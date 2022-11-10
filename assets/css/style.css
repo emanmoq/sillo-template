@@ -3263,7 +3263,6 @@ textarea {
 }
 
 .blogPageBox {
-    width: 328px;
     height: 470px;
     background: #FFFFFF;
     border: 1px solid #E6E6E6;
@@ -3414,4 +3413,23 @@ textarea {
 }
 .playBlogVideoBtn:hover i{
     color:white;
+}
+.SingleBlogBox{
+    border: 0;
+    height: auto;
+}
+.SingleBlogBox .BlogBoxImg{
+    width: 100%;
+    height: 448px;
+}
+.SingleBlogBox .BlogBoxImg:before{
+    display: none;
+}
+.blogGalleryContent .col-md-3{
+    padding:0 4px;
+}
+.SingleBlogBox h5{
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 32px;
 }
