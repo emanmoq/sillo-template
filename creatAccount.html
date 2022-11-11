@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="assets/images/logo.png">
     <link href="assets/lib/rating/css/star-rating-svg.css" rel="stylesheet">
     <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/selectric.css" rel="stylesheet">
 
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -577,6 +578,7 @@
     <script type="text/javascript" src="assets/lib/rating/jquery.star-rating-svg.js"></script>
     <script type="text/javaScript" src="assets/js/owl.carousel.js"></script>
     <script type="text/javaScript" src="assets/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.selectric.min.js"></script>
 
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script>
@@ -611,6 +613,12 @@
                 return "0" + integer;
             return "" + integer;
         }
+        $('.select').selectric({
+            disableOnMobile: false,
+            nativeOnMobile: false,
+            arrowButtonMarkup: '<b class="button"><i class="fa-solid fa-chevron-down"></i></b>',
+        }
+        );
     </script>
 </body>
 

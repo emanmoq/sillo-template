@@ -2780,11 +2780,12 @@ footer p {
     height: auto;
 }
 
-.chechoutForm .selectric-wrapper {
+ .selectric-wrapper {
     float: none;
     border: 1px solid #E6E6E6;
     border-radius: 6px;
     height: 49px;
+    padding: 0 10px;
 }
 
 .chechoutForm .checkContainer {
