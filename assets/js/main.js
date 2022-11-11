@@ -166,5 +166,18 @@ $(".awsomeTeamCar").owlCarousel({
     }
   }
 });
+$(".showHidePass").click(function () {
+      var x = $(this).closest(".form-group").find(".form-control");
+      if (x.attr("type") == "text") {
+        x.attr("type", "password");
+        $(this).closest(".form-group").find(".showPass").css("display", "block");
+        $(this).closest(".form-group").find(".hidePass").css("display", "none");
+      }
+      else {
+        x.attr("type", "text");
+        $(this).closest(".form-group").find(".hidePass").css("display", "block");
+        $(this).closest(".form-group").find(".showPass").css("display", "none");
+      }
+    });
 });
 

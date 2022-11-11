@@ -1200,9 +1200,8 @@ button:focus {
     width: 100%;
 }
 
-.form-group {
+.subscribeForm .form-group {
     width: 100%;
-    height: 100%;
 }
 
 .subscribeFormControl {
@@ -3214,10 +3213,11 @@ textarea {
 }
 
 .galleryFilterImg {
-    width: 100%;
+    width: 90px;
     border: 0.3px solid rgba(0, 0, 0, 0.2);
     border-radius: 6px;
-    height: 100px;
+    height: 90px;
+    overflow: hidden;
     margin-bottom: 8px;
 }
 
@@ -3232,7 +3232,7 @@ textarea {
 
 .recentlyAddedImg {
     width: 100px;
-    height: 77px;
+    height: 60px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 6px;
     margin-right: 12px;
@@ -3301,6 +3301,7 @@ textarea {
 
 
 }
+
 .blogDetailsHeader li a {
     color: #808080;
 }
@@ -3334,13 +3335,16 @@ textarea {
     color: var(--secondMainColor);
     display: flex;
 }
-.readMoreLink i{
+
+.readMoreLink i {
     align-self: center;
     margin-left: 10px;
 }
-.readMoreLink:hover{
-    color:var(--main-color)
+
+.readMoreLink:hover {
+    color: var(--main-color)
 }
+
 .blogImgDateDetails p {
     font-size: 1.25em;
     font-weight: 500;
@@ -3357,12 +3361,14 @@ textarea {
     border-radius: 4px;
     display: flex;
     justify-content: center;
-    bottom:24px;
-    left:24px
+    bottom: 24px;
+    left: 24px
 }
+
 .blogImgDateDetails {
     align-self: center;
 }
+
 .blogImgDateDetails span {
     font-weight: 500;
     font-size: 12px;
@@ -3371,29 +3377,36 @@ textarea {
 
 }
 
-.FilterList li:first-child{
-    padding-top:0
+.FilterList li:first-child {
+    padding-top: 0
 }
-.blogPageBox:hover .blogImgDate{
+
+.blogPageBox:hover .blogImgDate {
     background-color: var(--secondMainColor);
 }
-.blogPageBox:hover .blogImgDate p, .blogPageBox:hover  .blogImgDateDetails span{
+
+.blogPageBox:hover .blogImgDate p,
+.blogPageBox:hover .blogImgDateDetails span {
     color: white;
 }
-.blogDetailsHeader li:hover a{
-    color:var(--secondMainColor)
+
+.blogDetailsHeader li:hover a {
+    color: var(--secondMainColor)
 }
-.BlogBoxImg video{
+
+.BlogBoxImg video {
     width: 100%;
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
 }
-.blogVideoContain{
+
+.blogVideoContain {
     display: flex;
     justify-content: center;
     text-align: center;
 }
-.playBlogVideoBtn{
+
+.playBlogVideoBtn {
     display: flex;
     align-self: center;
     width: 64px;
@@ -3404,32 +3417,242 @@ textarea {
     position: absolute;
     z-index: 99999;
 }
-.playBlogVideoBtn i{
+
+.playBlogVideoBtn i {
     align-self: center;
     color: var(--secondMainColor);
 }
-.playBlogVideoBtn:hover{
+
+.playBlogVideoBtn:hover {
     background-color: var(--secondMainColor);
 }
-.playBlogVideoBtn:hover i{
-    color:white;
+
+.playBlogVideoBtn:hover i {
+    color: white;
 }
-.SingleBlogBox{
+
+.SingleBlogBox {
     border: 0;
     height: auto;
 }
-.SingleBlogBox .BlogBoxImg{
+
+.SingleBlogBox .BlogBoxImg {
     width: 100%;
     height: 448px;
 }
-.SingleBlogBox .BlogBoxImg:before{
+
+.SingleBlogBox .BlogBoxImg:before {
     display: none;
 }
-.blogGalleryContent .col-md-3{
-    padding:0 4px;
+
+.blogGalleryContent .col-md-3 {
+    padding: 0 4px;
 }
-.SingleBlogBox h5{
+
+.SingleBlogBox h5 {
     font-size: 2em;
     font-weight: 500;
     margin-bottom: 32px;
+}
+
+.blogwriterNamedesc {
+    display: inline-flex;
+}
+
+.blogWriterDetails .viewProductSocial {
+    float: right;
+    margin-bottom: 0;
+}
+
+.blogWriterImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 12px;
+    overflow: hidden;
+}
+
+.blogWriterName h5 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.blogWriterDate span {
+    font-weight: 400;
+    font-size: 14px;
+    color: #808080;
+}
+
+.blogWriterDate span:last-child {
+    position: relative;
+}
+
+.blogWriterDate span:last-child:before {
+    content: ".";
+    margin: 0 6px;
+    font-size: 16px;
+}
+
+.blogWriterName {
+    align-self: center;
+}
+
+.blogWriterDetails {
+    margin-bottom: 45px;
+}
+
+.blogDetailsTitle {
+    font-weight: 500;
+    font-size: 1.25em;
+    color: #1A1A1A;
+    margin-bottom: 16px;
+}
+
+.blogDetailsText {
+    font-weight: 400;
+    font-size: 1.125em;
+    color: #808080;
+    margin-bottom: 16px;
+}
+
+.SingleBlogBox .blogHeaderIcon path {
+    stroke: var(--secondMainColor)
+}
+.BlogBigImg {
+    width: 100%;
+    border: 0.3px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    height: 369px;
+    overflow: hidden;
+}
+.blogBigIImgCont{
+    margin-bottom: 20px;
+}
+.singleBlogOffer{
+    margin-bottom: 45px;
+    margin-top: 35px;
+    padding: 0;
+}
+.BlogleaveCOmment h4{
+    font-weight: 600;
+font-size: 1.25em;
+margin-bottom: 16px;
+color: #1A1A1A;
+
+}
+.BlogleaveCOmment label{
+    font-size: 14px;
+    font-weight: 400;
+}
+.BlogleaveCOmment textarea.form-control{
+    height: 100px;
+}
+.BlogleaveCOmment .form-group{
+    height: auto;
+}
+.blogCommentBtn{
+    width: 196px;
+    display: inline-flex;
+    margin: 40px 0;
+    height: 50px;
+}.commentWriterName h5{
+float: left;
+}
+.commentWriterName .blogWriterDate{
+    float: left;
+}
+.commentText{
+margin:0;
+margin-top: 5px;
+font-size: 14px;
+}
+.commentList li{
+    padding:24px 0;
+    border-bottom: 1px solid #E6E6E6;
+}
+.commentList li:last-child{
+    border: 0;
+}
+.blogLoadBtn{
+    border:1px solid var(--secondMainColor);
+    color:var(--secondMainColor);
+    background-color: white;
+    margin-top:24px
+}
+/*************************************************/
+.signInForm{
+    padding: 24px;
+    height: auto;
+}
+.SignInBtn{
+    width: 100%;
+    height: 45px;
+    margin-top:20px;
+    margin-bottom: 24px;
+}
+.signInForm h4 {
+    margin-bottom: 20px;
+}
+.showPass{
+    display: none
+}
+.createPass .showPass{
+    display: block;
+}
+.createPass .hidePass{
+    display: none;
+}
+.showHidePass{
+    position: absolute;
+    color: #1A1A1A;
+    font-size: .875em;
+    top: 32%;
+    right: 3%;
+}
+.createPass .showHidePass{
+    top:64%
+}
+.showHidePass:hover{
+    color:var(--secondMainColor)
+}
+.signInForm .form-group{
+    position: relative;
+}
+.forget{
+    float: right;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+    
+}
+.RememberPassword{
+    float: left;
+}
+.RememberPassword:hover{
+    color:var(--secondMainColor)
+}
+.signInForm p{
+font-weight: 400;
+font-size: 14px;
+color: #666666;
+text-align: center;
+margin: 0;
+}
+.signUpLink{
+    font-weight: 500;
+font-size: 14px;
+color:#1A1A1A
+}
+
+.signUpLink:hover{
+    color:var(--secondMainColor)
+}
+.signInForm label{
+    font-weight: 500;
+font-size: 14px;
+color: rgba(0, 0, 0, 0.5);
+}
+.signInForm .form-control::placeholder{
+    font-size: 14px;
 }
