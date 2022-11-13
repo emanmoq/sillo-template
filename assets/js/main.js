@@ -179,5 +179,14 @@ $(".showHidePass").click(function () {
         $(this).closest(".form-group").find(".showPass").css("display", "none");
       }
     });
+   $(".backBtn").click(function(){
+    $(".order-DetailsBox").css("display","none");
+    $(".orderHistory").css("display","block");
+   });
+   $(".viewproductDetailsBtn").click(function(){
+    $(this).closest(".orderHistory").css("display","none");
+    $(".order-DetailsBox").css("display","block");
+   })
+
 });
 

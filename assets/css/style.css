@@ -2780,7 +2780,7 @@ footer p {
     height: auto;
 }
 
- .selectric-wrapper {
+.selectric-wrapper {
     float: none;
     border: 1px solid #E6E6E6;
     border-radius: 6px;
@@ -3520,6 +3520,7 @@ textarea {
 .SingleBlogBox .blogHeaderIcon path {
     stroke: var(--secondMainColor)
 }
+
 .BlogBigImg {
     width: 100%;
     border: 0.3px solid rgba(0, 0, 0, 0.5);
@@ -3527,133 +3528,727 @@ textarea {
     height: 369px;
     overflow: hidden;
 }
-.blogBigIImgCont{
+
+.blogBigIImgCont {
     margin-bottom: 20px;
 }
-.singleBlogOffer{
+
+.singleBlogOffer {
     margin-bottom: 45px;
     margin-top: 35px;
     padding: 0;
 }
-.BlogleaveCOmment h4{
+
+.BlogleaveCOmment h4 {
     font-weight: 600;
-font-size: 1.25em;
-margin-bottom: 16px;
-color: #1A1A1A;
+    font-size: 1.25em;
+    margin-bottom: 16px;
+    color: #1A1A1A;
 
 }
-.BlogleaveCOmment label{
+
+.BlogleaveCOmment label {
     font-size: 14px;
     font-weight: 400;
 }
-.BlogleaveCOmment textarea.form-control{
+
+.BlogleaveCOmment textarea.form-control {
     height: 100px;
 }
-.BlogleaveCOmment .form-group{
+
+.BlogleaveCOmment .form-group {
     height: auto;
 }
-.blogCommentBtn{
+
+.blogCommentBtn {
     width: 196px;
     display: inline-flex;
     margin: 40px 0;
     height: 50px;
-}.commentWriterName h5{
-float: left;
 }
-.commentWriterName .blogWriterDate{
+
+.commentWriterName h5 {
     float: left;
 }
-.commentText{
-margin:0;
-margin-top: 5px;
-font-size: 14px;
+
+.commentWriterName .blogWriterDate {
+    float: left;
 }
-.commentList li{
-    padding:24px 0;
+
+.commentText {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.commentList li {
+    padding: 24px 0;
     border-bottom: 1px solid #E6E6E6;
 }
-.commentList li:last-child{
+
+.commentList li:last-child {
     border: 0;
 }
-.blogLoadBtn{
-    border:1px solid var(--secondMainColor);
-    color:var(--secondMainColor);
+
+.blogLoadBtn {
+    border: 1px solid var(--secondMainColor);
+    color: var(--secondMainColor);
     background-color: white;
-    margin-top:24px
+    margin-top: 24px
 }
+
 /*************************************************/
-.signInForm{
+.signInForm {
     padding: 24px;
     height: auto;
 }
-.SignInBtn{
+
+.SignInBtn {
     width: 100%;
     height: 45px;
-    margin-top:20px;
+    margin-top: 20px;
     margin-bottom: 24px;
 }
+
 .signInForm h4 {
     margin-bottom: 20px;
 }
-.showPass{
+
+.showPass {
     display: none
 }
-.createPass .showPass{
+
+.createPass .showPass {
     display: block;
 }
-.createPass .hidePass{
+
+.createPass .hidePass {
     display: none;
 }
-.showHidePass{
+
+.showHidePass {
     position: absolute;
     color: #1A1A1A;
     font-size: .875em;
     top: 32%;
     right: 3%;
 }
-.createPass .showHidePass{
-    top:64%
+
+.createPass .showHidePass {
+    top: 64%
 }
-.showHidePass:hover{
-    color:var(--secondMainColor)
+
+.showHidePass:hover {
+    color: var(--secondMainColor)
 }
-.signInForm .form-group{
+
+.signInForm .form-group {
     position: relative;
 }
-.forget{
+
+.forget {
     float: right;
     font-weight: 400;
     font-size: 14px;
     color: #666666;
-    
-}
-.RememberPassword{
-    float: left;
-}
-.RememberPassword:hover{
-    color:var(--secondMainColor)
-}
-.signInForm p{
-font-weight: 400;
-font-size: 14px;
-color: #666666;
-text-align: center;
-margin: 0;
-}
-.signUpLink{
-    font-weight: 500;
-font-size: 14px;
-color:#1A1A1A
+
 }
 
-.signUpLink:hover{
-    color:var(--secondMainColor)
+.RememberPassword {
+    float: left;
 }
-.signInForm label{
-    font-weight: 500;
-font-size: 14px;
-color: rgba(0, 0, 0, 0.5);
+
+.RememberPassword:hover {
+    color: var(--secondMainColor)
 }
-.signInForm .form-control::placeholder{
+
+.signInForm p {
+    font-weight: 400;
     font-size: 14px;
+    color: #666666;
+    text-align: center;
+    margin: 0;
+}
+
+.signUpLink {
+    font-weight: 500;
+    font-size: 14px;
+    color: #1A1A1A
+}
+
+.signUpLink:hover {
+    color: var(--secondMainColor)
+}
+
+.signInForm label {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.signInForm .form-control::placeholder {
+    font-size: 14px;
+}
+
+.dashboardPills {
+    padding-top: 20px;
+}
+
+.dashboardPage {
+    padding-top: 35px;
+    padding-bottom: 58px;
+}
+
+.navTitle {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.dashboardPills .nav-link {
+    padding: 19px 23px;
+    border-radius: 0;
+
+    color: #666666
+}
+
+.dashboardPills .nav-link.active {
+    background-color: #EDF2EE;
+    box-shadow: inset 3px 0px 0px #FE5000;
+    color: #1A1A1A;
+}
+
+.dashboardPills .nav-link i {
+    margin-right: 11px
+}
+
+.editProfilrImg {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+.editProfile h4 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #1A1A1A;
+}
+
+.profileBox {
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+    padding: 35px;
+    text-align: center;
+    height: 278px;
+
+}
+
+.editProfile span {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #808080;
+}
+
+.editProfile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.editProfile a {
+    color: var(--secondMainColor);
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    MARGIN-TOP: auto;
+}
+
+.editAddress {
+    text-align: left;
+}
+
+.editAddress span {
+    margin-bottom: 16px;
+    display: block;
+    text-align: left;
+    max-width: 50%;
+}
+
+.orderHistory {
+    margin-top: 24px;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+    padding: 16px 0;
+    height: auto;
+}
+
+.editProfileHeader h4 {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    text-align: left;
+    float: left;
+}
+
+.editProfileHeader {
+    padding: 0 24px;
+    margin-bottom: 19px;
+}
+
+.editProfileHeader a {
+    font-weight: 500;
+    font-size: 16px;
+    float: right;
+    color: #FE5000;
+}
+
+.editAddress p {
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 19px;
+    color: #1A1A1A;
+    margin-bottom: 11px;
+}
+
+.orderHistoryTable thead {
+    background: #F2F2F2;
+}
+
+.orderHistoryTable {
+    width: 100%;
+}
+
+.orderHistoryTable th {
+    font-weight: 600;
+    font-size: .85em;
+    color: #4D4D4D;
+    padding: 12px 24px;
+}
+
+.orderHistoryTable td {
+    font-weight: 400;
+    font-size: .875em;
+    color: #000000;
+    padding: 12px 24px
+}
+
+.orderHistoryTable span {
+    font-weight: 600;
+}
+
+.orderHistoryTable td a {
+    color: var(--secondMainColor);
+}
+
+.orderHistoryPagination {
+    margin-top: 40px;
+}
+
+.profileBox a:hover {
+    color: var(--main-color)
+}
+
+.order-DetailsBox .editProfileHeader {
+    margin-bottom: 40px;
+}
+
+.order-detailsTable {
+    width: 100%;
+}
+
+.order-detailsCont {
+    border: 1px solid #E6E6E6;
+    border-radius: 6px;
+    height: 250px;
+}
+
+.order-detailsTable tr {
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.order-detailsTable th {
+    padding: 18px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #999999;
+    border-bottom: 1px solid #E6E6E6;
+
+}
+
+table {
+    width: 100%;
+}
+
+.order-detailsTable th {
+    border-right: 1px solid #E6E6E6;
+}
+
+.editProfileHeader span {
+    font-weight: 400;
+    font-size: 14px;
+    color: #4D4D4D;
+    position: relative;
+    display: inline-block;
+
+}
+
+.editProfileHeader span:before {
+    content: ".";
+    margin: 0 8px;
+
+}
+
+.order-detailsTable td {
+    border: 0;
+    padding: 14px 22px;
+    border-right: 1px solid #E6E6E6;
+}
+
+.order-detailsTable td h6 {
+    margin-bottom: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #1A1A1A;
+}
+
+.order-detailsTable td span {
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+}
+
+.order-detailsTable ul li {
+    margin-bottom: 12px;
+}
+
+.order-detailsTableul li span {
+    font-weight: 500;
+    font-size: .85em;
+    color: #999999;
+    margin-bottom: 4px;
+}
+
+.order-detailsTable ul {
+    margin-top: 32px;
+}
+
+.order-detailsTable ul li p {
+    font-weight: 400;
+    font-size: .875em;
+    color: #1A1A1A;
+}
+
+.order-detailsTable ul li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.order-detailsPrice th {
+    padding: 0 15px;
+    border-bottom: 1px solid #E6E6E6;
+
+}
+
+.order-detailsPrice th span {
+    font-size: .75em;
+    font-weight: 400;
+    color: #999999;
+    margin-bottom: 6px;
+}
+
+.order-detailsPrice h6 {
+    font-weight: 400;
+    font-size: .85em;
+    color: #1A1A1A;
+}
+
+.order-detailsTable tr:last-child {
+    border-bottom: 0;
+}
+
+.orderDetailsId tbody td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+
+.orderDetailsId tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.order-detailsPrice tbody td span {
+    font-weight: 400;
+    font-size: .85em;
+    color: #666666;
+}
+
+.order-detailsPrice tbody .order-detailsPriceTotal td span {
+    font-size: 1.125em;
+    color: #1A1A1A;
+}
+
+.order-detailsPrice tbody td p {
+    font-weight: 500;
+    font-size: .875em;
+    color: #1A1A1A;
+    text-align: right;
+}
+
+.order-detailsPrice tbody .order-detailsPriceTotal td p {
+    font-size: 1.125em;
+    color: var(--secondMainColor)
+}
+
+.zeroPadding {
+    padding: 0;
+}
+
+.tablesCont {
+    margin: 0 24px;
+}
+
+.marginTable {
+    margin-left: 15px;
+}
+
+.order-detailsPrice th:first-child .tableHeadCont {
+
+    border-right: 1px solid #E6E6E6;
+}
+
+.order-detailsPrice th .tableHeadCont {
+    margin: 15px 0;
+}
+
+.order-process {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.order-process li:before,
+.order-process li:after {
+    height: 8px;
+    background-color: #F2F2F2;
+    position: absolute;
+    top: 33%;
+    right: 37px;
+    content: "";
+    width: 115px;
+}
+
+.order-process li:after {
+    left: 37px;
+    right: auto;
+}
+
+.order-process li {
+    display: inline-block;
+    margin-right: 110px;
+    text-align: center;
+    position: relative;
+    width: 95px
+}
+
+.order-process .processStage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    color: var(--secondMainColor);
+    position: relative;
+    border: 1px dashed var(--secondMainColor);
+    background-color: white;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.order-process .processStage span {
+    align-self: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+.order-process .processStage span {
+    color: var(--secondMainColor)
+}
+
+.order-process .done .processStage {
+    background-color: var(--secondMainColor);
+    color: white
+}
+
+.order-process .done .processStage span {
+    color: white
+}
+
+.order-process li.done:before,
+.order-process li.done:after {
+    background-color: var(--secondMainColor);
+}
+
+.order-process li:last-child {
+    margin-right: 0;
+}
+
+.order-process li:last-child:after {
+    display: none;
+}
+
+.order-process li:first-child:before {
+    display: none;
+}
+
+.order-process li p {
+    font-weight: 400;
+    font-size: .875em;
+    text-align: center;
+    color: #333333;
+}
+
+.order-process .done p {
+    color: var(--secondMainColor)
+}
+
+.productTable-details {
+    display: flex;
+}
+
+.productTable-detailsImg {
+    width: 70px;
+    height: 70px;
+    margin-right: 12px;
+}
+
+.productTable-detailsImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.productDastTable tr {
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.productDastTable tr:last-child {
+    border-bottom: 0
+}
+
+.productTable-details p {
+    align-self: center;
+    font-weight: 400;
+    font-size: .875em;
+    color: #1A1A1A;
+}
+
+.settingBox {
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+    padding: 18px 0;
+    ;
+}
+
+.settingBox h4 {
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #1A1A1A;
+    padding-bottom: 16px;
+    box-shadow: 0px 1px 0px #E6E6E6;
+    padding: 0 14px;
+    padding-bottom: 14px;
+}
+
+.order-DetailsBox {
+    display: none;
+}
+
+.changeSettingsForm {
+    padding: 24px 30px
+}
+
+.changeSettingsForm label {
+    font-weight: 400;
+    font-size: .875em;
+    color: #1A1A1A;
+    margin-bottom: 5px;
+}
+
+.changeSettingsForm .form-group {
+    margin-bottom: 16px;
+}
+
+.changeProfileImg {
+    margin-bottom: 20px;
+    width: 224px;
+    height: 224px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 30px
+}
+
+.changeProfileImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#changeImg {
+    position: absolute;
+    opacity: 0;
+   
+    left: 0;
+    top: 0;
+}
+
+.changeImgBtn {
+    width: 155px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 2px solid #FE5000;
+    border-radius: 43px;
+    color: var(--secondMainColor);
+    margin: auto;
+    position: relative;
+}
+
+.changeImgBtn:hover {
+    background-color: var(--secondMainColor);
+    color: white
+}
+
+.changePicImg {
+    margin: 155px;
+    margin: auto;
+    display: block;
+    margin: auto;
+
+}
+
+.changePicImg {
+    position: relative;
+}
+
+.saveSett{
+    margin-top: 10px;
+    margin-left: 0;
+}
+.settingBox{
+    margin-bottom: 26px;
+}
+.saveSett span{
+    font-size: .875em;
+}
+.settingBox .showHidePass{
+    top: 48%;
+    right: 22px;
 }
