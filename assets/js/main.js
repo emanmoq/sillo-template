@@ -66,7 +66,7 @@ $(document).ready(function () {
     }
   });
   $(".FilterRating").starRating({
-    starSize:20,
+    starSize: 20,
     activeColor: '#FF8A00',
     hoverColor: '#FFD93F',
     ratedColor: '#FF8A00',
@@ -120,73 +120,80 @@ $(document).ready(function () {
   });
   $("#price-range").slider({
     step: 10,
-    range: true, 
-    min: 0, 
-    max: 7000, 
-    values: [150, 3000], 
-    
-    slide: function(event, ui)
-    {$(".priceRange").val(ui.values[0] + " - " + ui.values[1]);}
+    range: true,
+    min: 0,
+    max: 7000,
+    values: [150, 3000],
+
+    slide: function (event, ui) { $(".priceRange").val(ui.values[0] + " - " + ui.values[1]); }
   });
   $(".priceRange").val($("#price-range").slider("values", 0) + " - " + $(".price-range").slider("values", 1));
-$(".FilterList li a").click(function(){
-  $(this).parent().find(".filterContent").slideToggle();
-  $(this).find('.fa-solid').toggleClass('fa-solid fa-chevron-up  fa-solid fa-chevron-down');
-});
+  $(".FilterList li a").click(function () {
+    $(this).parent().find(".filterContent").slideToggle();
+    $(this).find('.fa-solid').toggleClass('fa-solid fa-chevron-up  fa-solid fa-chevron-down');
+  });
 
-/*******************Close Cart Menu *************/
-/*****************Close Cart Item ***************/
-$(".closeCartItem").click(function(){
-  $(this).closest("li").css("display","none")
-})
-$(".closeCart").click(function(){
-  $(".shopMenu").css("right","-1000px");
-  $(".overlayBody").css("display","none")
+  /*******************Close Cart Menu *************/
+  /*****************Close Cart Item ***************/
+  $(".closeCartItem").click(function () {
+    $(this).closest("li").css("display", "none")
+  })
+  $(".closeCart").click(function () {
+    $(".shopMenu").css("right", "-1000px");
+    $(".overlayBody").css("display", "none")
 
-})
-$(".cartClick").click(function(){
-  $(".shopMenu").css("right","-100%");
-  $(".overlayBody").css("display","block")
-})
-$(".awsomeTeamCar").owlCarousel({
-  nav: true,
-  loop: false,
-  margin: 30,
-  navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
-  responsive: {
-    0: {
-      items: 1,
-      nav: false
-    },
-    700: {
-      items: 2,
-    },
-    1000: {
-      items: 3,
+  })
+  $(".cartClick").click(function () {
+    $(".shopMenu").css("right", "-100%");
+    $(".overlayBody").css("display", "block")
+  })
+  $(".awsomeTeamCar").owlCarousel({
+    nav: true,
+    loop: false,
+    margin: 30,
+    navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
+    responsive: {
+      0: {
+        items: 1,
+        nav: false
+      },
+      700: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      }
     }
-  }
-});
-$(".showHidePass").click(function () {
-      var x = $(this).closest(".form-group").find(".form-control");
-      if (x.attr("type") == "text") {
-        x.attr("type", "password");
-        $(this).closest(".form-group").find(".showPass").css("display", "block");
-        $(this).closest(".form-group").find(".hidePass").css("display", "none");
-      }
-      else {
-        x.attr("type", "text");
-        $(this).closest(".form-group").find(".hidePass").css("display", "block");
-        $(this).closest(".form-group").find(".showPass").css("display", "none");
-      }
-    });
-   $(".backBtn").click(function(){
-    $(".order-DetailsBox").css("display","none");
-    $(".orderHistory").css("display","block");
-   });
-   $(".viewproductDetailsBtn").click(function(){
-    $(this).closest(".orderHistory").css("display","none");
-    $(".order-DetailsBox").css("display","block");
-   })
+  });
+  $(".showHidePass").click(function () {
+    var x = $(this).closest(".form-group").find(".form-control");
+    if (x.attr("type") == "text") {
+      x.attr("type", "password");
+      $(this).closest(".form-group").find(".showPass").css("display", "block");
+      $(this).closest(".form-group").find(".hidePass").css("display", "none");
+    }
+    else {
+      x.attr("type", "text");
+      $(this).closest(".form-group").find(".hidePass").css("display", "block");
+      $(this).closest(".form-group").find(".showPass").css("display", "none");
+    }
+  });
+  $(".backBtn").click(function () {
+    $(".order-DetailsBox").css("display", "none");
+    $(".orderHistory").css("display", "block");
+  });
+  $(".viewproductDetailsBtn").click(function () {
+    $(this).closest(".orderHistory").css("display", "none");
+    $(".order-DetailsBox").css("display", "block");
+  })
+  $('.accordion-panel').click(function () {
+    $(this).find('.plusMinus i').toggleClass('fa-minus fa-plus');
+    $(this).closest(".faqContent").addClass("active");
+  });
+  $('.faqHeader').click(function () {
+    $(this).closest(".faqContent").find('.faqbody').slideToggle(400);
+  });
+  $(".faqHeader").on("click", "a", function (e) { e.preventDefault() });
 
 });
 
