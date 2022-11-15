@@ -64,7 +64,9 @@ p {
 .headerContactIcon svg {
     width: 100%;
 }
-
+.headerContactInfo {
+    float: right;
+}
 .headerContactInfo li {
     margin-right: 73px;
     display: inline-block;
@@ -917,7 +919,7 @@ p {
 
 /*****************************************/
 .FeaturedProduct {
-    padding-top: 0;
+    padding-top: 20px;
     padding-bottom: 35px;
 }
 
@@ -2357,6 +2359,7 @@ footer p {
     top: -72px;
     transition: all .5s;
     overflow-y: scroll;
+    display: none;
 }
 
 .shopMenu h4 {

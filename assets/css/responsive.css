@@ -1,0 +1,102 @@
+@media(max-width:850px) {
+    body {
+        font-size: 14px;
+    }
+
+    .owl-stage-outer {
+        overflow: hidden !important;
+    }
+
+    .carousel-item img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .offersAdvertisement {
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .offersAdvertisement:before {
+        content: "";
+        background-color: rgba(0, 0, 0, .2);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        ;
+        left: 0;
+        top: 0
+    }
+
+    .advCont {
+        padding: 25px 0 19px
+    }
+
+    .FollowCar .owl-nav button.owl-next,
+    .FollowCar .owl-nav button.owl-prev {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid var(--main-color);
+        margin: 5px
+    }
+
+    .FollowCar.owl-carousel .owl-nav button.owl-next i,
+    .testmonialCar.owl-carousel .owl-nav button.owl-prev i {
+        color: var(--main-color);
+    }
+
+    .FollowCar.owl-carousel .owl-nav button.owl-next:hover i,
+    .FollowCar.owl-carousel .owl-nav button.owl-prev:hover i {
+
+        color: white
+    }
+
+    .FollowCar.owl-carousel .owl-nav button.owl-next:hover,
+    .FollowCar.owl-carousel .owl-nav button.owl-prev:hover {
+        background-color: var(--main-color);
+    }
+
+    .FollowCar.owl-carousel .owl-nav {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .subscribeForm {
+        margin: 20px 0
+    }
+
+    .footerList {
+        margin-top: 20px;
+    }
+
+    .offersBox {
+        margin-bottom: 10px;
+    }
+
+    .headerContactInfo li {
+        margin-right: 8px;
+    }
+
+    .conttactHeaderInfo li:last-child {
+        display: none
+    }
+
+    .headerContactInfo {
+        float: none;
+    }
+    .headerContactInfo li span {
+        font-size: .65em;
+    }
+    .headerContactInfo li a.changeLang{
+        width: 64px;
+    }
+    .logo{
+        width:50px
+    }
+}

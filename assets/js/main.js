@@ -104,11 +104,11 @@ $(document).ready(function () {
     loop: true,
 
     margin: 20,
-    navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
+    navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
     responsive: {
       0: {
         items: 1,
-        nav: false
+        nav: true
       },
       700: {
         items: 2,
