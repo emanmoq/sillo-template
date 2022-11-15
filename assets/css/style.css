@@ -150,6 +150,7 @@ p {
     z-index: 1;
     top: 10px;
     left: 12px;
+    color:#8F8F8F80;
 }
 
 .searchInput {
@@ -214,10 +215,13 @@ p {
     justify-content: center;
 }
 
-.wishCartlList li:hover svg path {
-    fill: var(--secondMainColor);
-}
 
+.wishCartlList a{
+    color:#000000
+}
+.wishCartlList li:hover a{
+    color:var(--secondMainColor)
+}
 .wishCartlList li:hover h6 {
     color: var(--main-color)
 }
@@ -4363,4 +4367,7 @@ margin-bottom: 25px;
 }
 .faqContent.active .faqHeader{
     background-color: white;
+}
+.navbar-collapse .close{
+    display: none;
 }

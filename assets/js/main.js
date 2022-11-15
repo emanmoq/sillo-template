@@ -140,12 +140,15 @@ $(document).ready(function () {
   })
   $(".closeCart").click(function () {
     $(".shopMenu").css("right", "-1000px");
-    $(".overlayBody").css("display", "none")
+    $(".overlayBody").css("display", "none");
+    $(".shopMenu").css("display", "none");
 
   })
   $(".cartClick").click(function () {
     $(".shopMenu").css("right", "-100%");
-    $(".overlayBody").css("display", "block")
+    $(".overlayBody").css("display", "block");
+    $(".shopMenu").css("display", "block");
+
   })
   $(".awsomeTeamCar").owlCarousel({
     nav: true,
@@ -194,6 +197,8 @@ $(document).ready(function () {
     $(this).closest(".faqContent").find('.faqbody').slideToggle(400);
   });
   $(".faqHeader").on("click", "a", function (e) { e.preventDefault() });
-
+  $(".close span").click(function(){
+    $(".navbar-collapse").removeClass("show")
+})
 });
 

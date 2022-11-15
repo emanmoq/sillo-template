@@ -90,13 +90,229 @@
     .headerContactInfo {
         float: none;
     }
+
     .headerContactInfo li span {
         font-size: .65em;
     }
-    .headerContactInfo li a.changeLang{
+
+    .headerContactInfo li a.changeLang {
         width: 64px;
     }
-    .logo{
-        width:50px
+
+    .logo {
+        width: 40px
+    }
+
+    .wishCartlList li {
+        margin-left: 0
+    }
+
+    .wishCartlList li i {
+        font-size: .8em;
+    }
+
+    .wishCartlList li h6 {
+        font-size: 0.6em;
+    }
+
+    .wishCartlList li {
+        margin-right: 10px;
+    }
+
+    .wishCartlList li:last-child {
+        margin-right: 0;
+    }
+
+    .cartNum {
+        width: 13px;
+        height: 13px;
+        font-size: 0.8em;
+    }
+
+    .searchInput {
+        padding: 0;
+        padding-left: 27px;
+    }
+
+    .searchInput::placeholder {
+        font-size: 10px;
+        max-width: 75px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        height: 1.2em;
+        white-space: nowrap;
+        align-self: center;
+    }
+
+    .searchBtn {
+        width: 49px;
+        font-size: 10px;
+    }
+
+    .searchBox {
+        height: 24px;
+    }
+
+    .searchBox .form-group {
+        margin-bottom: 0;
+    }
+
+    .searchBox .form-group i {
+        font-size: 10px;
+        top: 7px;
+        left: 7px
+    }
+
+    .wishIconHeader {
+        margin-bottom: 0;
+    }
+
+    .MiddleHeder {
+        padding-top: 14px
+    }
+
+     .navbar-collapse .close {
+        display: block;
+        position: absolute;
+        right: 10px;
+        opacity: .5;
+        background-color: transparent;
+        border: 0;
+        top: 10px;
+        font-size: 20px;
+        z-index: 9999999999999;
+    }
+
+    .navbar-nav .nav-item {
+        margin-top: 20px
+    }
+
+    .collapsing {
+        position: absolute;
+        height: 100vh !important;
+        overflow: hidden;
+        transition: all .15s ease;
+        background-color: white;
+        left: -200px
+    }
+
+    .navbar-collapse.collapse {
+        position: absolute;
+        left: -200px;
+        padding: 10px;
+        z-index: 33333;
+        top: -52px;
+        opacity: 0;
+        height: 100vh !important;
+        background-color: white;
+        width: 100vw;
+    }
+
+  
+      
+
+    .navbar-toggler {
+        display: inline-block;
+        width: 28px;
+        height: 21px;
+        padding: 2px;
+        cursor: pointer;
+        transition: transform .2s ease-in-out;
+        -moz-transition: transform .2s ease-in-out;
+        -webkit-transition: transform .2s ease-in-out;
+        vertical-align: middle;
+        background: none;
+        align-self: center;
+        border: 1px solid var(--main-color);
+
+    }
+
+    .navbar-toggler:before,
+    .navbar-toggler:after {
+        content: "";
+    }
+
+    .navbar-toggler:before,
+    .navbar-toggler span,
+    .navbar-toggler:after {
+        display: block;
+        width: 100%;
+        height: 2px;
+        margin: 0 0 4px;
+        transition: transform .2s ease-in-out;
+        -moz-transition: transform .2s ease-in-out;
+        -webkit-transition: transform .2s ease-in-out;
+        background: var(--main-color);
+        border-radius: 5px;
+    }
+    .navbar-toggler:after {
+        margin-bottom: 0;
+    }
+
+    .navbar-expand-lg {
+        padding: 10px 0;
+    }
+
+    .navbar-collapse.collapse.show {
+        left: -15px;
+        opacity: 1;
+    }
+
+    .carousel-caption h1 {
+        font-size: 24px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+
+        margin-top: 17px;
+    }
+
+    .heroBtn {
+        font-size: 16px;
+        margin-top: 15px;
+        width: 115px;
+        height: 32px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 25px;
+        height: 25px;
+    }
+
+    .carousel-control-prev i,
+    .carousel-control-next i {
+        font-size: 14px;
+    }
+
+    .carousel-control-prev{
+        left: 19px;
+    }
+    .carousel-control-next{
+        right: 19px;
+    }
+    .carousel-caption{
+        top:18px
+    }
+    .carousel-inner{
+        height: 163px;
+    }
+    .carousel-indicators{
+        bottom: -40px;
+    }.carousel-indicators li{
+        width: 8px;
+        height: 8px;
+    }
+    .carousel-indicators li.active{
+        width: 12px;
+        height: 12px;
+    }
+    .popularCateg{
+        padding-top: 35px;
+    }
+    .offersSec .container {
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }
