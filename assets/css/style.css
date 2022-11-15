@@ -4371,3 +4371,6 @@ margin-bottom: 25px;
 .navbar-collapse .close{
     display: none;
 }
+.mobileFilter{
+    display: none;
+}

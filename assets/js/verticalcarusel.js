@@ -3148,16 +3148,20 @@
 })(window.Zepto || window.jQuery, window, document);
 
 
+if ( $(window).width() >854 ) {
+	$("#productViewSlider").owlCarousel({
+		loop: true,
+		autoplay: true,
+		vertical:true,
+		nav:true,
+		items:4,
+		margin:10,
+		animateOut: 'slideOutUp',
+		animateIn: 'slideInUp',
+		navText: ['<i class="fa fa-chevron-up"></i>', '<i class="fa fa-chevron-down"></i>'],
+	
+	  });
+  } else {
+    $('#productViewSlider').addClass('off');
+  }
 
-$("#productViewSlider").owlCarousel({
-    loop: true,
-    autoplay: true,
-	vertical:true,
-	nav:true,
-	items:4,
-	margin:10,
-    animateOut: 'slideOutUp',
-	animateIn: 'slideInUp',
-	navText: ['<i class="fa fa-chevron-up"></i>', '<i class="fa fa-chevron-down"></i>'],
-
-  });

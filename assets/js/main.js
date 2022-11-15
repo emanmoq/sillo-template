@@ -200,5 +200,21 @@ $(document).ready(function () {
   $(".close span").click(function(){
     $(".navbar-collapse").removeClass("show")
 })
+$(".mobileFilter").click(function(){
+  $(".FilterList").slideToggle(400)
+});
+if($(window).width()<850){
+  $("#productViewSlider").owlCarousel({
+    nav: false,
+    loop: true,
+    items: 3,
+    nav: true,
+    margin: 10,
+    navText: ['<i class="fa fa-chevron-right"></i>', '<i class="fa fa-chevron-left"></i>'],
+  });
+}
+else{
+  $('#productViewSlider').addClass('off');
+}
 });
 
