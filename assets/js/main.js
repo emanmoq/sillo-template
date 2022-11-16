@@ -139,13 +139,21 @@ $(document).ready(function () {
     $(this).closest("li").css("display", "none")
   })
   $(".closeCart").click(function () {
-    $(".shopMenu").css("right", "-1000px");
-    $(".overlayBody").css("display", "none");
-    $(".shopMenu").css("display", "none");
+
+      $(".shopMenu").css("right", "-1000px");
+      $(".overlayBody").css("display", "none");
+      $(".shopMenu").css("display", "none");
+
+  
 
   })
+  
   $(".cartClick").click(function () {
-    $(".shopMenu").css("right", "-100%");
+    if( $(window).width() > 850){
+    $(".shopMenu").css("right", "-100%");}
+    else{
+      $(".shopMenu").css("right", "-3%");}
+    
     $(".overlayBody").css("display", "block");
     $(".shopMenu").css("display", "block");
 
