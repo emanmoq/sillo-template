@@ -108,7 +108,7 @@
     }
 
     .wishCartlList li i {
-        font-size: .8em;
+        font-size: .75em;
     }
 
     .wishCartlList li h6 {
@@ -116,7 +116,7 @@
     }
 
     .wishCartlList li {
-        margin-right: 10px;
+        margin-right: 3px;
     }
 
     .wishCartlList li:last-child {
@@ -433,5 +433,6 @@ top:45px;text-align: left;
     padding-top: 30px;
     padding-bottom: 15px;
 }
-
+.headerCon{
+    margin-right: 3px;
 }
