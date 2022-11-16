@@ -512,7 +512,9 @@
         font-size: 12px;
         font-weight: 600;
     }
-
+    .wishListItem h4{
+        margin-left: 6px;
+    }
     .wishListItemImg {
         width: 50px;
         height: 50px;
@@ -557,4 +559,76 @@
     .wishListSocial{
         margin:0
     }
+    .btn-number{
+        width: 18px;
+        height: 18px;
+        padding: 0;
+    }
+    .mycartTable td .newPrice{
+        font-size: 10px;
+    }
+    .myCartplusMinus{
+        padding: 3px 5px;
+    }
+    .btn-number i{
+        font-size: 10px;
+    }
+    #input-quantity{
+        font-size: 13px;
+    }
+    .input-number{
+        width: 18px;
+        height: 18px;
+    }
+    .mycartTable thead tr th{
+        font-size: 10px;
+        padding: 10px;
+    }
+    
+element.style {
+}
+.mycartTable .wishListItem {
+    width: auto;
+}
+.mycartTable td {
+    padding:  10px ;
+}
+.mycartTable .closeCartItem{
+width: 16px;
+height: 16px;
+font-size: 13px;
+margin-right: 5px;
+}
+.returnToShop {
+    width: 102px;
+height: 32px;
+font-weight: 500;
+font-size: 10px;
+margin-top: 14px;
+margin-left: 8px;
+}
+.updateCart{
+    margin-right: 7px;
+}
+.cuponSection h5{
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 10px;
+margin-right: 5px;}
+.cubonForm .subscribeFormControl{
+    height: 31px;
+}
+.cubonForm .subscribeFormControl::placeholder{
+    font-size: 12px;
+}
+.cubonForm .form-group{
+    margin: 0;
+}
+.cubonForm .cubonBtn{
+    width: 112px;
+    font-size: 12px;
+}
+.cubonForm{
+    height: 31px;
+}
 }
