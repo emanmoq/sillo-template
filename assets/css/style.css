@@ -2252,6 +2252,7 @@ footer p {
 
 .discoutProductSide i {
     margin-right: 15px;
+    color: var(--secondMainColor);
 }
 
 .discountsideDetails h5 {

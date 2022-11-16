@@ -396,5 +396,42 @@ color:white}
 height: auto;
 top:45px;text-align: left;
 }
+.categPills .nav-link{
+    margin:0 2px
+}
+.discountsideDetails h5{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.discountsideDetails span{
+    font-size: 10px;
+}
+.discountDetailsBox{
+    height: 60px;
+    padding: 0 17px;
+    margin-bottom: 13px;
+}
+.productVideo{
+    margin-bottom: 0;
+}
+.ProductCategDetailsPillsCont{
+    padding-bottom: 0;
+}
+.productCol{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.productBox{
+    margin-bottom: 20px;
+}
+.categPills .nav-link{
+    font-size: 12px;
+    padding:7px 12px
+}
+.categProductCont{
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
 
 }
