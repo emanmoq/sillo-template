@@ -171,7 +171,7 @@
         padding-top: 14px
     }
 
-     .navbar-collapse .close {
+    .navbar-collapse .close {
         display: block;
         position: absolute;
         right: 10px;
@@ -208,8 +208,8 @@
         width: 100vw;
     }
 
-  
-      
+
+
 
     .navbar-toggler {
         display: inline-block;
@@ -245,6 +245,7 @@
         background: var(--main-color);
         border-radius: 5px;
     }
+
     .navbar-toggler:after {
         margin-bottom: 0;
     }
@@ -286,153 +287,274 @@
         font-size: 14px;
     }
 
-    .carousel-control-prev{
+    .carousel-control-prev {
         left: 19px;
     }
-    .carousel-control-next{
+
+    .carousel-control-next {
         right: 19px;
     }
-    .carousel-caption{
-        top:18px
+
+    .carousel-caption {
+        top: 18px
     }
-    .carousel-inner{
+
+    .carousel-inner {
         height: 163px;
     }
-    .carousel-indicators{
+
+    .carousel-indicators {
         bottom: -40px;
-    }.carousel-indicators li{
+    }
+
+    .carousel-indicators li {
         width: 8px;
         height: 8px;
     }
-    .carousel-indicators li.active{
+
+    .carousel-indicators li.active {
         width: 12px;
         height: 12px;
     }
-    .popularCateg{
+
+    .popularCateg {
         padding-top: 35px;
     }
+
     .offersSec .container {
         padding-right: 15px;
         padding-left: 15px;
     }
-    .FilterList{
+
+    .FilterList {
         display: none;
     }
-    .categOffers{
+
+    .categOffers {
         display: none;
     }
-    .SalesProductList{
+
+    .SalesProductList {
         display: none;
     }
-    .mobileFilter{display: block;
-    float: right;
-color:white}
-.filterBtn{
-    width: 67px;
-    height: 24px;
-    margin-bottom: 0;
-}
-.filterHeader p{
-    font-size: 10px;
-}
-.filterHeader .selectric-select{
-    width: 97px;
-   min-height: 24px !important;
-   height: 24px !important;
-}
 
-#viewProduct .modal-body{
-    padding: 28px 18px;
-}
-.viewProductsDetails{
-    margin-top: 30px;
-}
-.selectric .button{
-    font-size: 10px;
-    padding: 2px 0;
-}
-.filterHeader span{
-    font-size: 10px;
-}
-.chechoutForm .form-control::placeholder, .selectric .label, .selectric-items li{
-    font-size: 12px;
-}
-.filterHeader   .selectric .label{
-    padding: 0;
-    line-height: 24px;
-}
+    .mobileFilter {
+        display: block;
+        float: right;
+        color: white
+    }
 
-.selectric{width: 100%;}
-.breadcrumbContainer nav{display: inline-block;}
-#productViewSlider{
-    height: auto !important;
-    width: 100%;
-    display: flex !important;
-}
-#productViewSlider.owl-carousel .owl-nav .owl-next{
-    bottom: auto;
-    left: 0;
-    right: auto;
-}
-#productViewSlider.owl-carousel .owl-nav .owl-next, #productViewSlider.owl-carousel .owl-nav .owl-prev{
-    top: auto;
-    right: 0;
-    left: auto;
-}
-.producViewImage{
-    width: 100%;
-    display: flex;
-    height: 400px;
-}
-.productImageList{
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-.productImageList{
-    height: auto;
-}
-#productViewSlider .owl-nav{
-height: auto;
-top:45px;text-align: left;
-}
-.categPills .nav-link{
-    margin:0 2px
-}
-.discountsideDetails h5{
-    font-size: 12px;
-    margin-bottom: 5px;
-}
+    .filterBtn {
+        width: 67px;
+        height: 24px;
+        margin-bottom: 0;
+    }
 
-.discountsideDetails span{
-    font-size: 10px;
-}
-.discountDetailsBox{
-    height: 60px;
-    padding: 0 17px;
-    margin-bottom: 13px;
-}
-.productVideo{
-    margin-bottom: 0;
-}
-.ProductCategDetailsPillsCont{
-    padding-bottom: 0;
-}
-.productCol{
-    padding-right: 15px;
-    padding-left: 15px;
-}
-.productBox{
-    margin-bottom: 20px;
-}
-.categPills .nav-link{
-    font-size: 12px;
-    padding:7px 12px
-}
-.categProductCont{
-    padding-top: 30px;
-    padding-bottom: 15px;
-}
-.headerCon{
-    margin-right: 3px;
+    .filterHeader p {
+        font-size: 10px;
+    }
+
+    .filterHeader .selectric-select {
+        width: 97px;
+        min-height: 24px !important;
+        height: 24px !important;
+    }
+
+    #viewProduct .modal-body {
+        padding: 28px 18px;
+    }
+
+    .viewProductsDetails {
+        margin-top: 30px;
+    }
+
+    .selectric .button {
+        font-size: 10px;
+        padding: 2px 0;
+    }
+
+    .filterHeader span {
+        font-size: 10px;
+    }
+
+    .chechoutForm .form-control::placeholder,
+    .selectric .label,
+    .selectric-items li {
+        font-size: 12px;
+    }
+
+    .filterHeader .selectric .label {
+        padding: 0;
+        line-height: 24px;
+    }
+
+    .selectric {
+        width: 100%;
+    }
+
+    .breadcrumbContainer nav {
+        display: inline-block;
+    }
+
+    #productViewSlider {
+        height: auto !important;
+        width: 100%;
+        display: flex !important;
+    }
+
+    #productViewSlider.owl-carousel .owl-nav .owl-next {
+        bottom: auto;
+        left: 0;
+        right: auto;
+    }
+
+    #productViewSlider.owl-carousel .owl-nav .owl-next,
+    #productViewSlider.owl-carousel .owl-nav .owl-prev {
+        top: auto;
+        right: 0;
+        left: auto;
+    }
+
+    .producViewImage {
+        width: 100%;
+        display: flex;
+        height: 400px;
+    }
+
+    .productImageList {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .productImageList {
+        height: auto;
+    }
+
+    #productViewSlider .owl-nav {
+        height: auto;
+        top: 45px;
+        text-align: left;
+    }
+
+    .categPills .nav-link {
+        margin: 0 2px
+    }
+
+    .discountsideDetails h5 {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .discountsideDetails span {
+        font-size: 10px;
+    }
+
+    .discountDetailsBox {
+        height: 60px;
+        padding: 0 17px;
+        margin-bottom: 13px;
+    }
+
+    .productVideo {
+        margin-bottom: 0;
+    }
+
+    .ProductCategDetailsPillsCont {
+        padding-bottom: 0;
+    }
+
+    .productCol {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .productBox {
+        margin-bottom: 20px;
+    }
+
+    .categPills .nav-link {
+        font-size: 12px;
+        padding: 7px 12px
+    }
+
+    .categProductCont {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .headerCon {
+        margin-right: 3px;
+    }
+
+    .breadcrumb-item {
+        font-size: 10px;
+    }
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        margin: 0;
+        font-size: 10px`;
+    }
+
+    .widhTableHeader {
+        display: block;
+        padding-bottom: 30px;
+    }
+
+    .availabeCont,
+    .widhTableHeader .oldNewPrice {
+        display: inline-block;
+
+    }
+
+    .widhTableHeader p,
+    .wishListItem h4 {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .wishListItemImg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .oldNewPrice span {
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .available {
+        font-size: 10px;
+    }
+
+    .widhTableHeaderTop {
+        display: flex;
+    }
+
+    .widhTableHeader p:first-child {
+        width: 44%;
+    }
+
+    .widhTableHeader p:nth-child(2) {
+        width: 25%;
+    }
+
+    .widhTableHeader .close {
+        top: 25px
+    }
+
+    .wishTableBtn {
+        margin: auto;
+        margin-top: 40px;
+        width: 251px;
+        height: 32px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .actionsTable{
+        width: 100%;
+    }
+    .wishListSocial{
+        margin:0
+    }
 }
