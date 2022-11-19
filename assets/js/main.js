@@ -140,20 +140,22 @@ $(document).ready(function () {
   })
   $(".closeCart").click(function () {
 
-      $(".shopMenu").css("right", "-1000px");
-      $(".overlayBody").css("display", "none");
-      $(".shopMenu").css("display", "none");
+    $(".shopMenu").css("right", "-1000px");
+    $(".overlayBody").css("display", "none");
+    $(".shopMenu").css("display", "none");
 
-  
+
 
   })
-  
+
   $(".cartClick").click(function () {
-    if( $(window).width() > 850){
-    $(".shopMenu").css("right", "-100%");}
-    else{
-      $(".shopMenu").css("right", "-3%");}
-    
+    if ($(window).width() > 850) {
+      $(".shopMenu").css("right", "-100%");
+    }
+    else {
+      $(".shopMenu").css("right", "-3%");
+    }
+
     $(".overlayBody").css("display", "block");
     $(".shopMenu").css("display", "block");
 
@@ -197,32 +199,31 @@ $(document).ready(function () {
     $(this).closest(".orderHistory").css("display", "none");
     $(".order-DetailsBox").css("display", "block");
   })
-  $('.accordion-panel').click(function () {
-    $(this).find('.plusMinus i').toggleClass('fa-minus fa-plus');
-    $(this).closest(".faqContent").addClass("active");
-  });
+
   $('.faqHeader').click(function () {
+    $(this).closest(".faqContent").find('.plusMinus i').toggleClass('fa-minus fa-plus');
     $(this).closest(".faqContent").find('.faqbody').slideToggle(400);
+    $(this).closest(".faqContent").toggleClass("active")
   });
   $(".faqHeader").on("click", "a", function (e) { e.preventDefault() });
-  $(".close span").click(function(){
+  $(".close span").click(function () {
     $(".navbar-collapse").removeClass("show")
-})
-$(".mobileFilter").click(function(){
-  $(".FilterList").slideToggle(400)
-});
-if($(window).width()<850){
-  $("#productViewSlider").owlCarousel({
-    nav: false,
-    loop: true,
-    items: 3,
-    nav: true,
-    margin: 10,
-    navText: ['<i class="fa fa-chevron-right"></i>', '<i class="fa fa-chevron-left"></i>'],
+  })
+  $(".mobileFilter").click(function () {
+    $(".FilterList").slideToggle(400)
   });
-}
-else{
-  $('#productViewSlider').addClass('off');
-}
+  if ($(window).width() < 850) {
+    $("#productViewSlider").owlCarousel({
+      nav: false,
+      loop: true,
+      items: 3,
+      nav: true,
+      margin: 10,
+      navText: ['<i class="fa fa-chevron-right"></i>', '<i class="fa fa-chevron-left"></i>'],
+    });
+  }
+  else {
+    $('#productViewSlider').addClass('off');
+  }
 });
 

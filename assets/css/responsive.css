@@ -631,4 +631,25 @@ margin-right: 5px;}
 .cubonForm{
     height: 31px;
 }
+.faqTitle{
+    font-size: 1.5em;
+}
+.faqHeader a{
+    font-size: 15px;
+}
+.faqImg{
+    width: 100%;
+}
+.aboutPageText h4{
+    font-size: 1.25em;
+}
+.aboutPage{
+    padding:20px 0
+}
+.aboutImg{
+    margin-bottom: 23px;
+}
+.aboutSecondImg{
+    margin-top: 65px;
+}
 }

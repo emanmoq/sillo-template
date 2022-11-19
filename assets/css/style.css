@@ -2631,9 +2631,11 @@ footer p {
 .actionsTable {
     display: inline-flex;
 }
-.mycartTable  .wishListItem{
+
+.mycartTable .wishListItem {
     width: auto;
 }
+
 .widhTableHeader {
     position: relative;
 }
@@ -2670,24 +2672,28 @@ footer p {
 .viewProductSocial.wishListSocial span {
     margin-right: 0;
 }
-.mycartTable thead{
+
+.mycartTable thead {
     border-bottom: 1px solid #E6E6E6;
 }
+
 .mycartTable thead tr th {
     font-weight: 500;
     font-size: 14px;
     color: #808080;
-    padding:16px 20px;
+    padding: 16px 20px;
 }
-.mycartTable td{
-    padding:11px 16px;
+
+.mycartTable td {
+    padding: 11px 16px;
 
 }
 
-.mycartTable tbody tr{
+.mycartTable tbody tr {
     border-bottom: 1px solid #E6E6E6;
 
 }
+
 .mycartTableCont {
     border: 1px solid #E6E6E6;
     border-radius: 8px;
@@ -2707,8 +2713,9 @@ footer p {
     font-size: 1em;
     font-weight: 600;
 }
-.mycartTable  .close{
-margin-right: 20px;
+
+.mycartTable .close {
+    margin-right: 20px;
 }
 
 .returnToShop {
@@ -2724,7 +2731,8 @@ margin-right: 20px;
     display: inline-flex;
 
 }
-.updateCart{
+
+.updateCart {
     float: right;
     margin-right: 30px;
 }
@@ -4457,4 +4465,114 @@ table {
 
 .mobileFilter {
     display: none;
+}
+
+.terms h4 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 45px;
+}
+
+.termsClose {
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+.termsTitle {
+    margin-bottom: 45px;
+}
+
+.agreementBox span {
+    font-weight: 500;
+    font-size: 1.5em;
+    opacity: .7;
+    margin-bottom: 18px;
+    display: block;
+}
+
+.agreementBox {
+    height: 700px;
+    overflow-y: scroll;
+    padding-right: 55px;
+    margin-bottom: 23px;
+}
+
+.agreementBox::-webkit-scrollbar {
+    width: 5px;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, .03);
+}
+
+.agreementBox::-webkit-scrollbar-thumb {
+    background: var(--secondMainColor);
+    height: 75px !important;
+    overflow: hidden;
+    border-right: none;
+    border-left: none;
+    margin: 200px
+}
+
+
+
+.agreementBox p {
+    font-weight: 400;
+    font-size: 1em;
+    opacity:  .7;
+    margin-bottom: 22px;
+
+}
+
+.agreeBtn {
+    float: left;
+    margin: 0;
+}
+
+.cancelTermBtn {
+    float: right;
+    margin: 0;
+    background-color: white;
+    border: 1px solid var(--secondMainColor)
+}
+
+.cancelTermBtn:hover {
+    background-color: var(--box-shadow);
+    color: var(--secondMainColor)
+}
+
+.PrivacyBox li {
+    position: relative;
+}
+
+.PrivacyBox h3:before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: var(--secondMainColor);
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 2PX;
+    margin-right: 14px;
+}
+
+.PrivacyBox h3 {
+    font-weight: 600;
+    font-size: 1.125em;
+    line-height: 21px;
+    color: #1A1A1A;
+    margin-bottom: 11px;
+    position: relative;
+    padding-left: 25px;
+}
+.PrivacyBox{
+    text-align: left;
+}
+.termsTitle h4 span{
+    display: block;
+    margin-top: 14px;
+    font-weight: 500;
+font-size: 14px;
+opacity: .5;
 }
