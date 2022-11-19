@@ -652,4 +652,14 @@ margin-right: 5px;}
 .aboutSecondImg{
     margin-top: 65px;
 }
+.contactUsPage{
+    padding: 15px 0;
+}
+.contactInfoBox{
+    padding:14px 16px;
+    margin-bottom: 20px;
+}
+.pagination{
+    margin-top: 20px;
+}
 }
