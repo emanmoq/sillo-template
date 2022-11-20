@@ -16,6 +16,8 @@
     <link href="assets/css/selectric.css" rel="stylesheet">
 
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
 
 </head>
 
@@ -349,6 +351,9 @@
                             </li>
                         </ol>
                     </nav>
+                    <a href="javaScript:;" class="showDashBoardItem"> <i class="fa-solid fa-bars"></i></a>
+
+
                 </div>
             </div>
         </div>
@@ -357,32 +362,36 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <h3 class="navTitle">Navigation</h3>
-                    <div class="nav flex-column nav-pills dashboardPills" id="v-pills-tab" role="tablist"
-                        aria-orientation="vertical">
-                        <a class="nav-link " id="v-pills-dash-tab" data-toggle="pill" href="#v-pills-dash" role="tab"
-                            aria-controls="v-pills-dash" aria-selected="true"><i class="fa-solid fa-objects-column"></i>
-                            Dashboard</a>
-                        <a class="nav-link " id="v-pills-History-tab" data-toggle="pill" href="#v-pills-History"
-                            role="tab" aria-controls="v-pills-History" aria-selected="false"> <i
-                                class="fa-solid fa-arrows-rotate"></i> Order History</a>
-                        <a class="nav-link" id="v-pills-Wishlist-tab" data-toggle="pill" href="#v-pills-Wishlist"
-                            role="tab" aria-controls="v-pills-Wishlist" aria-selected="false"><i
-                                class="fa-regular fa-heart"></i> Wishlist</a>
-                        <a class="nav-link" id="v-pills-Cart-tab" data-toggle="pill" href="#v-pills-Cart" role="tab"
-                            aria-controls="v-pills-Cart" aria-selected="false"><i class="fa-solid fa-cart-shopping"></i>
-                            Shopping Cart</a>
-                        <a class="nav-link active" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings"
-                            role="tab" aria-controls="v-pills-settings" aria-selected="false"> <i
-                                class="fa-solid fa-gear"></i>Settings</a>
-                        <a class="nav-link" id="v-pills-logout-tab" data-toggle="pill" href="javaScript:;" role="tab"
-                            aria-controls="v-pills-logout" aria-selected="false"><i
-                                class="fa-solid fa-right-from-bracket"></i> Log out</a>
+                    <div class="dashNavItem">
+                        <h3 class="navTitle">Navigation</h3>
+                        <div class="nav flex-column nav-pills dashboardPills" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <a class="nav-link active " id="v-pills-dash-tab" data-toggle="pill" href="#v-pills-dash"
+                                role="tab" aria-controls="v-pills-dash" aria-selected="true"><i
+                                    class="fa-solid fa-objects-column"></i>
+                                Dashboard</a>
+                            <a class="nav-link " id="v-pills-History-tab" data-toggle="pill" href="#v-pills-History"
+                                role="tab" aria-controls="v-pills-History" aria-selected="false"> <i
+                                    class="fa-solid fa-arrows-rotate"></i> Order History</a>
+                            <a class="nav-link" id="v-pills-Wishlist-tab" data-toggle="pill" href="#v-pills-Wishlist"
+                                role="tab" aria-controls="v-pills-Wishlist" aria-selected="false"><i
+                                    class="fa-regular fa-heart"></i> Wishlist</a>
+                            <a class="nav-link" id="v-pills-Cart-tab" data-toggle="pill" href="#v-pills-Cart" role="tab"
+                                aria-controls="v-pills-Cart" aria-selected="false"><i
+                                    class="fa-solid fa-cart-shopping"></i>
+                                Shopping Cart</a>
+                            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings"
+                                role="tab" aria-controls="v-pills-settings" aria-selected="false"> <i
+                                    class="fa-solid fa-gear"></i>Settings</a>
+                            <a class="nav-link" id="v-pills-logout-tab" data-toggle="pill" href="javaScript:;"
+                                role="tab" aria-controls="v-pills-logout" aria-selected="false"><i
+                                    class="fa-solid fa-right-from-bracket"></i> Log out</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-9">
                     <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade  " id="v-pills-dash" role="tabpanel"
+                        <div class="tab-pane fade active show " id="v-pills-dash" role="tabpanel"
                             aria-labelledby="v-pills-dash-tab">
                             <div class="row">
                                 <div class="col-md-6">
@@ -411,497 +420,505 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <div class="profileBoX orderHistory">
-                                        <div class="editProfileHeader clearfix">
-                                            <h4>Recet Order History</h4>
-                                            <a href="javaScript:;">View All</a>
-                                        </div>
-                                        <table class="orderHistoryTable">
-                                            <thead>
-                                                <tr>
-                                                    <th>
-                                                        Order ID
-                                                    </th>
-                                                    <th>
-                                                        Date
-                                                    </th>
-                                                    <th>
-                                                        Total
-                                                    </th>
-                                                    <th>
-                                                        Status
-                                                    </th>
-                                                    <th>
-
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        #738
-                                                    </td>
-                                                    <td>3 Sep, 2022</td>
-                                                    <td>
-                                                        <span> $135.00 (5 Products)
-                                                        </span>
-                                                    </td>
-                                                    <td>
-                                                        Processing
-                                                    </td>
-                                                    <td>
-                                                        <a href="javaScript:;"> View Details
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        #738
-                                                    </td>
-                                                    <td>3 Sep, 2022</td>
-                                                    <td>
-                                                        <span> $135.00 (5 Products)
-                                                        </span>
-                                                    </td>
-                                                    <td>
-                                                        Processing
-                                                    </td>
-                                                    <td>
-                                                        <a href="javaScript:;"> View Details
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        #738
-                                                    </td>
-                                                    <td>3 Sep, 2022</td>
-                                                    <td>
-                                                        <span> $135.00 (5 Products)
-                                                        </span>
-                                                    </td>
-                                                    <td>
-                                                        Processing
-                                                    </td>
-                                                    <td>
-                                                        <a href="javaScript:;"> View Details
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        #738
-                                                    </td>
-                                                    <td>3 Sep, 2022</td>
-                                                    <td>
-                                                        <span> $135.00 (5 Products)
-                                                        </span>
-                                                    </td>
-                                                    <td>
-                                                        Processing
-                                                    </td>
-                                                    <td>
-                                                        <a href="javaScript:;"> View Details
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        #738
-                                                    </td>
-                                                    <td>3 Sep, 2022</td>
-                                                    <td>
-                                                        <span> $135.00 (5 Products)
-                                                        </span>
-                                                    </td>
-                                                    <td>
-                                                        Processing
-                                                    </td>
-                                                    <td>
-                                                        <a href="javaScript:;"> View Details
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="v-pills-History" role="tabpanel"
-                            aria-labelledby="v-pills-History-tab">
-                            <div class="profileBoX orderHistory">
-                                <div class="editProfileHeader clearfix">
-                                    <h4>Recet Order History</h4>
-                                    <a href="javaScript:;">View All</a>
-                                </div>
-                                <table class="orderHistoryTable">
-                                    <thead>
-                                        <tr>
-                                            <th>
-                                                Order ID
-                                            </th>
-                                            <th>
-                                                Date
-                                            </th>
-                                            <th>
-                                                Total
-                                            </th>
-                                            <th>
-                                                Status
-                                            </th>
-                                            <th>
-
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                #738
-                                            </td>
-                                            <td>3 Sep, 2022</td>
-                                            <td>
-                                                <span> $135.00 (5 Products)
-                                                </span>
-                                            </td>
-                                            <td>
-                                                Processing
-                                            </td>
-                                            <td>
-                                                <a href="javaScript:;" class="viewproductDetailsBtn"> View Details
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                #738
-                                            </td>
-                                            <td>3 Sep, 2022</td>
-                                            <td>
-                                                <span> $135.00 (5 Products)
-                                                </span>
-                                            </td>
-                                            <td>
-                                                Processing
-                                            </td>
-                                            <td>
-                                                <a href="javaScript:;" class="viewproductDetailsBtn"> View Details
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                #738
-                                            </td>
-                                            <td>3 Sep, 2022</td>
-                                            <td>
-                                                <span> $135.00 (5 Products)
-                                                </span>
-                                            </td>
-                                            <td>
-                                                Processing
-                                            </td>
-                                            <td>
-                                                <a href="javaScript:;" class="viewproductDetailsBtn"> View Details
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                #738
-                                            </td>
-                                            <td>3 Sep, 2022</td>
-                                            <td>
-                                                <span> $135.00 (5 Products)
-                                                </span>
-                                            </td>
-                                            <td>
-                                                Processing
-                                            </td>
-                                            <td>
-                                                <a href="javaScript:;" class="viewproductDetailsBtn"> View Details
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                #738
-                                            </td>
-                                            <td>3 Sep, 2022</td>
-                                            <td>
-                                                <span> $135.00 (5 Products)
-                                                </span>
-                                            </td>
-                                            <td>
-                                                Processing
-                                            </td>
-                                            <td>
-                                                <a href="javaScript:;" class="viewproductDetailsBtn"> View Details
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <nav aria-label="Page orderHistoryPagination navigation example justify-content-center">
-                                    <ul class="pagination">
-                                        <li class="page-item disabled"><a class="page-link" href="#"><i
-                                                    class="fa-solid fa-chevron-left"></i></a></li>
-                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="#"><i
-                                                    class="fa-solid fa-chevron-right"></i></a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="profileBox orderHistory order-DetailsBox">
-                                <div class="editProfileHeader clearfix">
-                                    <h4>Order Details <span>April 24, 2021</span> <span>3 Products
-                                        </span> </h4>
-                                    <a href="javaScript:;" class="backBtn">Back to List</a>
-                                </div>
-                                <div class="row tablesCont">
-                                    <div class="col-md-8 zeroPadding">
-                                        <div class="order-detailsCont">
-                                            <table class="order-detailsTable">
+                                    <div class="table-responsive">
+                                        <div class="profileBoX orderHistory ">
+                                            <div class="editProfileHeader clearfix">
+                                                <h4>Recet Order History</h4>
+                                                <a href="javaScript:;">View All</a>
+                                            </div>
+                                            <table class="orderHistoryTable">
                                                 <thead>
                                                     <tr>
-                                                        <th width="50%">Billing Address
+                                                        <th width="30%">
+                                                            <span> Order ID</span>
                                                         </th>
-                                                        <th width="50%">
-                                                            Shipping Address
+                                                        <th>
+                                                            Date
+                                                        </th>
+                                                        <th>
+                                                            Total
+                                                        </th>
+                                                        <th>
+                                                            Status
+                                                        </th>
+                                                        <th>
+
                                                         </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
                                                         <td>
-                                                            <h6>Darlene Robertson </h6>
-                                                            <span>4140 Parker Rd. Dasma, Kuwait 31134
+                                                            #738
+                                                        </td>
+                                                        <td>3 Sep, 2022</td>
+                                                        <td>
+                                                            <span> $135.00 (5 Products)
                                                             </span>
-                                                            <ul>
-                                                                <li>
-                                                                    <span>
-                                                                        Email
-                                                                    </span>
-                                                                    <p>Info@software - silo.com
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <span>
-                                                                        Phone
-                                                                    </span>
-                                                                    <p>(00965) 505-407-86s
-                                                                    </p>
-                                                                </li>
-                                                            </ul>
                                                         </td>
                                                         <td>
-                                                            <h6>Darlene Robertson </h6>
-                                                            <span>4140 Parker Rd. Dasma, Kuwait 31134
+                                                            Processing
+                                                        </td>
+                                                        <td>
+                                                            <a href="javaScript:;"> View Details
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            #738
+                                                        </td>
+                                                        <td>3 Sep, 2022</td>
+                                                        <td>
+                                                            <span> $135.00 (5 Products)
                                                             </span>
-                                                            <ul>
-                                                                <li>
-                                                                    <span>
-                                                                        Email
-                                                                    </span>
-                                                                    <p>Info@software - silo.com
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <span>
-                                                                        Phone
-                                                                    </span>
-                                                                    <p>(00965) 505-407-86s
-                                                                    </p>
-                                                                </li>
-                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            Processing
+                                                        </td>
+                                                        <td>
+                                                            <a href="javaScript:;"> View Details
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            #738
+                                                        </td>
+                                                        <td>3 Sep, 2022</td>
+                                                        <td>
+                                                            <span> $135.00 (5 Products)
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            Processing
+                                                        </td>
+                                                        <td>
+                                                            <a href="javaScript:;"> View Details
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            #738
+                                                        </td>
+                                                        <td>3 Sep, 2022</td>
+                                                        <td>
+                                                            <span> $135.00 (5 Products)
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            Processing
+                                                        </td>
+                                                        <td>
+                                                            <a href="javaScript:;"> View Details
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            #738
+                                                        </td>
+                                                        <td>3 Sep, 2022</td>
+                                                        <td>
+                                                            <span> $135.00 (5 Products)
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            Processing
+                                                        </td>
+                                                        <td>
+                                                            <a href="javaScript:;"> View Details
+                                                            </a>
                                                         </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 zeroPadding">
-                                        <div class="order-detailsCont marginTable">
 
-                                            <div class="orderDetailsId">
-                                                <table class="order-detailsPrice">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade " id="v-pills-History" role="tabpanel"
+                            aria-labelledby="v-pills-History-tab ">
+                            <div class="table-responsive order-historyBox">
+                                <div class="profileBoX orderHistory">
+                                    <div class="editProfileHeader clearfix">
+                                        <h4>Recet Order History</h4>
+                                        <a href="javaScript:;">View All</a>
+                                    </div>
+                                    <table class="orderHistoryTable">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Order ID
+                                                </th>
+                                                <th>
+                                                    Date
+                                                </th>
+                                                <th>
+                                                    Total
+                                                </th>
+                                                <th>
+                                                    Status
+                                                </th>
+                                                <th>
+
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    #738
+                                                </td>
+                                                <td>3 Sep, 2022</td>
+                                                <td>
+                                                    <span> $135.00 (5 Products)
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    Processing
+                                                </td>
+                                                <td>
+                                                    <a href="javaScript:;" class="viewproductDetailsBtn"> View Details
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    #738
+                                                </td>
+                                                <td>3 Sep, 2022</td>
+                                                <td>
+                                                    <span> $135.00 (5 Products)
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    Processing
+                                                </td>
+                                                <td>
+                                                    <a href="javaScript:;" class="viewproductDetailsBtn"> View Details
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    #738
+                                                </td>
+                                                <td>3 Sep, 2022</td>
+                                                <td>
+                                                    <span> $135.00 (5 Products)
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    Processing
+                                                </td>
+                                                <td>
+                                                    <a href="javaScript:;" class="viewproductDetailsBtn"> View Details
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    #738
+                                                </td>
+                                                <td>3 Sep, 2022</td>
+                                                <td>
+                                                    <span> $135.00 (5 Products)
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    Processing
+                                                </td>
+                                                <td>
+                                                    <a href="javaScript:;" class="viewproductDetailsBtn"> View Details
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    #738
+                                                </td>
+                                                <td>3 Sep, 2022</td>
+                                                <td>
+                                                    <span> $135.00 (5 Products)
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    Processing
+                                                </td>
+                                                <td>
+                                                    <a href="javaScript:;" class="viewproductDetailsBtn"> View Details
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <nav
+                                        aria-label="Page orderHistoryPagination navigation example justify-content-center">
+                                        <ul class="pagination">
+                                            <li class="page-item disabled"><a class="page-link" href="#"><i
+                                                        class="fa-solid fa-chevron-left"></i></a></li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#"><i
+                                                        class="fa-solid fa-chevron-right"></i></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="table-responsive showOrder-detailsBox">
+                                <div class="profileBox orderHistory order-DetailsBox ">
+                                    <div class="editProfileHeader clearfix">
+                                        <h4>Order Details <span>April 24, 2021</span> <span>3 Products
+                                            </span> </h4>
+                                        <a href="javaScript:;" class="backBtn">Back to List</a>
+                                    </div>
+                                    <div class="row tablesCont">
+                                        <div class="col-md-8 zeroPadding">
+                                            <div class="order-detailsCont">
+                                                <table class="order-detailsTable">
                                                     <thead>
                                                         <tr>
-                                                            <th width="50%">
-                                                                <div class="tableHeadCont">
-                                                                    <span>Order ID:</span>
-                                                                    <h6>#4152</h6>
-                                                                </div>
+                                                            <th width="50%">Billing Address
                                                             </th>
                                                             <th width="50%">
-                                                                <div class="tableHeadCont">
-                                                                    <span>Payment Method:</span>
-                                                                    <h6>Unknown</h6>
-                                                                </div>
+                                                                Shipping Address
                                                             </th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td width="50%">
-                                                                <span>Subtotal:</span>
+                                                            <td>
+                                                                <h6>Darlene Robertson </h6>
+                                                                <span>4140 Parker Rd. Dasma, Kuwait 31134
+                                                                </span>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>
+                                                                            Email
+                                                                        </span>
+                                                                        <p>Info@software - silo.com
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>
+                                                                            Phone
+                                                                        </span>
+                                                                        <p>(00965) 505-407-86s
+                                                                        </p>
+                                                                    </li>
+                                                                </ul>
                                                             </td>
-                                                            <td width="50%">
-                                                                <p>$365.00</p>
-                                                            </td>
-                                                        </tr>
-
-                                                        <td width="50%">
-                                                            <span>Discount:</span>
-                                                        </td>
-                                                        <td width="50%">
-                                                            <p>20%</p>
-                                                        </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="50%">
-                                                                <span>Shipping</span>
-                                                            </td>
-                                                            <td width="50%">
-                                                                <p>Free</p>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="order-detailsPriceTotal">
-                                                            <td width="50%">
-                                                                <span>Total</span>
-                                                            </td>
-                                                            <td width="50%">
-                                                                <p>$84,00</p>
+                                                            <td>
+                                                                <h6>Darlene Robertson </h6>
+                                                                <span>4140 Parker Rd. Dasma, Kuwait 31134
+                                                                </span>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>
+                                                                            Email
+                                                                        </span>
+                                                                        <p>Info@software - silo.com
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>
+                                                                            Phone
+                                                                        </span>
+                                                                        <p>(00965) 505-407-86s
+                                                                        </p>
+                                                                    </li>
+                                                                </ul>
                                                             </td>
                                                         </tr>
                                                     </tbody>
-
                                                 </table>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="order-process">
-                                            <ul>
-                                                <li class="Done">
-                                                    <div class="processStage ">
-                                                        <span> <i class="fa-solid fa-check"></i></span>
-                                                    </div>
-                                                    <p>Order received</p>
-                                                </li>
-                                                <li class="Done  Inprocess">
-                                                    <div class="processStage ">
-                                                        <span>01</span>
-                                                    </div>
-                                                    <p>Processing</p>
-                                                </li>
-                                                <li>
-                                                    <div class="processStage ">
-                                                        <span>03</span>
-                                                    </div>
-                                                    <p>On the Way</p>
-                                                </li>
-                                                <li>
-                                                    <div class="processStage ">
-                                                        <span>4</span>
-                                                    </div>
-                                                    <p>Delivered</p>
-                                                </li>
-                                            </ul>
+                                        <div class="col-md-4 zeroPadding">
+                                            <div class="order-detailsCont marginTable">
+
+                                                <div class="orderDetailsId">
+                                                    <table class="order-detailsPrice">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="50%">
+                                                                    <div class="tableHeadCont">
+                                                                        <span>Order ID:</span>
+                                                                        <h6>#4152</h6>
+                                                                    </div>
+                                                                </th>
+                                                                <th width="50%">
+                                                                    <div class="tableHeadCont">
+                                                                        <span>Payment Method:</span>
+                                                                        <h6>Unknown</h6>
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="50%">
+                                                                    <span>Subtotal:</span>
+                                                                </td>
+                                                                <td width="50%">
+                                                                    <p>$365.00</p>
+                                                                </td>
+                                                            </tr>
+
+                                                            <td width="50%">
+                                                                <span>Discount:</span>
+                                                            </td>
+                                                            <td width="50%">
+                                                                <p>20%</p>
+                                                            </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="50%">
+                                                                    <span>Shipping</span>
+                                                                </td>
+                                                                <td width="50%">
+                                                                    <p>Free</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="order-detailsPriceTotal">
+                                                                <td width="50%">
+                                                                    <span>Total</span>
+                                                                </td>
+                                                                <td width="50%">
+                                                                    <p>$84,00</p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="order-process table-responsive">
+                                                <ul>
+                                                    <li class="Done">
+                                                        <div class="processStage ">
+                                                            <span> <i class="fa-solid fa-check"></i></span>
+                                                        </div>
+                                                        <p>Order received</p>
+                                                    </li>
+                                                    <li class="Done  Inprocess">
+                                                        <div class="processStage ">
+                                                            <span>01</span>
+                                                        </div>
+                                                        <p>Processing</p>
+                                                    </li>
+                                                    <li>
+                                                        <div class="processStage ">
+                                                            <span>03</span>
+                                                        </div>
+                                                        <p>On the Way</p>
+                                                    </li>
+                                                    <li>
+                                                        <div class="processStage ">
+                                                            <span>4</span>
+                                                        </div>
+                                                        <p>Delivered</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
+                                    <table class="orderHistoryTable productDastTable">
+                                        <thead>
+                                            <tr>
+                                                <th width="40%">
+                                                    Product
+                                                </th>
+                                                <th width="20%">
+                                                    Price
+                                                </th>
+                                                <th width="20%">
+                                                    Quantity
+                                                </th>
+                                                <th width="20%">
+                                                    Subtotal
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="productTable-details">
+                                                        <div class="productTable-detailsImg">
+                                                            <img src="assets/images/p2.png" alt="">
+                                                        </div>
+                                                        <p>Lemon</p>
+                                                    </div>
+                                                </td>
+                                                <td class="productPrice-price">$14.00</td>
+                                                <td>
+                                                    x5
+                                                </td>
+                                                <td class="dashTotal">
+                                                    <span>$70</span>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="productTable-details">
+                                                        <div class="productTable-detailsImg">
+                                                            <img src="assets/images/p3.png" alt="">
+                                                        </div>
+                                                        <p>Chilli</p>
+                                                    </div>
+                                                </td>
+                                                <td class="productPrice-price">$14.00</td>
+                                                <td>
+                                                    x5
+                                                </td>
+                                                <td class="dashTotal">
+                                                    <span>$70</span>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="productTable-details">
+                                                        <div class="productTable-detailsImg">
+                                                            <img src="assets/images/p4.png" alt="">
+                                                        </div>
+                                                        <p>Carrots</p>
+                                                    </div>
+                                                </td>
+                                                <td class="productPrice-price">$14.00</td>
+                                                <td>
+                                                    x5
+                                                </td>
+                                                <td class="dashTotal">
+                                                    <span>$70</span>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
                                 </div>
-                                <table class="orderHistoryTable productDastTable">
-                                    <thead>
-                                        <tr>
-                                            <th width="40%">
-                                                Product
-                                            </th>
-                                            <th width="20%">
-                                                Price
-                                            </th>
-                                            <th width="20%">
-                                                Quantity
-                                            </th>
-                                            <th width="20%">
-                                                Subtotal
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="productTable-details">
-                                                    <div class="productTable-detailsImg">
-                                                        <img src="assets/images/p2.png" alt="">
-                                                    </div>
-                                                    <p>Lemon</p>
-                                                </div>
-                                            </td>
-                                            <td class="productPrice-price">$14.00</td>
-                                            <td>
-                                                x5
-                                            </td>
-                                            <td class="dashTotal">
-                                                <span>$70</span>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="productTable-details">
-                                                    <div class="productTable-detailsImg">
-                                                        <img src="assets/images/p3.png" alt="">
-                                                    </div>
-                                                    <p>Chilli</p>
-                                                </div>
-                                            </td>
-                                            <td class="productPrice-price">$14.00</td>
-                                            <td>
-                                                x5
-                                            </td>
-                                            <td class="dashTotal">
-                                                <span>$70</span>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="productTable-details">
-                                                    <div class="productTable-detailsImg">
-                                                        <img src="assets/images/p4.png" alt="">
-                                                    </div>
-                                                    <p>Carrots</p>
-                                                </div>
-                                            </td>
-                                            <td class="productPrice-price">$14.00</td>
-                                            <td>
-                                                x5
-                                            </td>
-                                            <td class="dashTotal">
-                                                <span>$70</span>
-                                            </td>
-
-                                        </tr>
-                                    </tbody>
-                                </table>
-
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-Wishlist" role="tabpanel"
                             aria-labelledby="v-pills-Wishlist-tab">...</div>
                         <div class="tab-pane fade" id="v-pills-Cart" role="tabpanel" aria-labelledby="v-pills-Cart-tab">
                             ...</div>
-                        <div class="tab-pane fade active show" id="v-pills-settings" role="tabpanel"
+                        <div class="tab-pane fade " id="v-pills-settings" role="tabpanel"
                             aria-labelledby="v-pills-settings-tab">
                             <div class="settingBox">
                                 <h4>Account Settings</h4>
                                 <form action="" class="changeSettingsForm">
                                     <div class="row">
-                                        <div class="col-md-7">
+                                        <div class="col-md-7 order-lg-1 order-md-1 order-2">
                                             <div class="form-group">
                                                 <label for="">First name</label>
                                                 <input type="text" class="form-control" placholder="Darlene">
@@ -920,8 +937,8 @@
                                                 <input type="text" class="form-control" placholder="(00965) 505-407-86">
                                             </div>
                                         </div>
-                                        <div class="col-md-1"></div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-1 order-lg-2 order-md-2 order-3"></div>
+                                        <div class="col-md-4 order-lg-3 order-md-3 order-1">
                                             <div class=" changeProfileImg">
                                                 <img src="assets/images/Ellipse 5.png" alt="">
                                             </div>
@@ -948,7 +965,7 @@
                                             </script>
 
                                         </div>
-                                        <div class="col-md-12">
+                                        <div class="col-md-12 order-4">
                                             <button class="btn offerBtn saveSett"><span>Save Changes</span></button>
                                         </div>
                                     </div>
@@ -1050,21 +1067,23 @@
                                             <div class="form-group">
                                                 <label for="">New Password</label>
                                                 <input class="form-control" type="text" value="Password">
-                                                <a href="javaScript:;" class="showHidePass"><i class="hidePass fa fa-eye-slash"></i>
+                                                <a href="javaScript:;" class="showHidePass"><i
+                                                        class="hidePass fa fa-eye-slash"></i>
                                                     <i class="showPass fa fa-eye"></i>
                                                 </a>
                                             </div>
-                    
+
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="">Confirm Password</label>
                                                 <input class="form-control" type="text" value="Password">
-                                                <a href="javaScript:;" class="showHidePass"><i class="hidePass fa fa-eye-slash"></i>
+                                                <a href="javaScript:;" class="showHidePass"><i
+                                                        class="hidePass fa fa-eye-slash"></i>
                                                     <i class="showPass fa fa-eye"></i>
                                                 </a>
                                             </div>
-                    
+
                                         </div>
 
                                         <div class="col-md-12">
@@ -1126,7 +1145,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-6">
+                <div class="col-md-4 col-6 ">
                     <div class="footerLogo">
                         <img src="assets/images/footerLogo.png" alt="">
                     </div>
@@ -1137,7 +1156,7 @@
                     </p>
                     <h6>(+965 555 555 555) or (+965 555 555 555) </h6>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-6">
                     <div class="footerList">
                         <h5> My Account</h5>
                         <li><a href="javaScript:;">My Account</a></li>
@@ -1151,7 +1170,7 @@
                         </li>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-6">
                     <div class="footerList">
                         <h5> Help</h5>
                         <li><a href="javaScript:;">Contact</a></li>
@@ -1170,7 +1189,7 @@
                         </li>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-6">
                     <div class="footerList">
                         <h5> Proxy</h5>
                         <li><a href="javaScript:;">About</a></li>
@@ -1184,7 +1203,7 @@
                         </li>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-6">
                     <div class="footerList">
                         <h5> Categories</h5>
                         <li><a href="javaScript:;">Beauty & Health</a></li>

@@ -131,7 +131,7 @@
 
     .searchInput {
         padding: 0;
-        padding-left: 27px;
+        padding-left: 35px;
     }
 
     .searchInput::placeholder {
@@ -338,7 +338,7 @@
         display: none;
     }
 
-    .mobileFilter {
+    .mobileFilter,.showDashBoardItem {
         display: block;
         float: right;
         color: white
@@ -661,5 +661,130 @@ margin-right: 5px;}
 }
 .pagination{
     margin-top: 20px;
+}
+.changeProfileImg{
+    margin:auto;
+    margin-bottom: 15px;
+}
+.changeImgBtn{
+    margin:auto
+}
+.orderHistoryTable th{
+    font-size: 12px;
+    padding: 12px 115px 12px 1px;
+}
+.orderHistoryTable th  span{
+    display: block;
+    width: 50px;
+}
+.orderHistoryTable td{
+    font-size: 14px;
+    padding:12px 5px
+}
+.editProfileHeader h4{
+    font-size: 18px;
+}
+.editProfileHeader a{
+    font-size: 16px;
+}
+.changePicImg{
+    margin-bottom: 20px;
+}
+.searchFilter {
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+.SingleBlogBox .BlogBoxImg {
+height: 214px;
+}
+.socialIconsSub li i{
+    font-size: 12px
+}
+.viewProductSocial .socialIconsSub li{
+    width: 20px;
+    height: 20px;
+}
+.blogWriterImg{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.blogWriterName h5{
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+    
+.blogWriterDate {
+    line-height: .8;
+}
+.blogWriterDate span{
+    font-size: 11px;
+}
+.SingleBlogBox h5{
+    font-size: 16px;
+}
+.BlogBigImg{
+    height:154px
+}
+.blogDetails p {
+    font-size: 12px;
+}
+.singleBlogOffer.offersAdvertisement{
+    height: 193px;
+
+    background-repeat: no-repeat;
+    margin:10px 0
+}
+.singleBlogOffer.offersAdvertisement:before{
+    background-image: url(../images/background.png);
+    background-size: contain;
+}
+.advCont{
+    padding:20px 0
+}
+.offersAdvertisement .container{
+    padding:0 15px;
+    background-image: none;
+}
+.advCont h6{
+    font-size: 12px;
+}
+.advCont h4{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.advCont p{
+    font-size: 9px;
+    line-height: 1;
+}
+.advCont .offerBtn{
+    width: 132px;
+height: 38px;
+font-size: 16px;
+}
+.commentList .blogWriterImg{
+    width: 40px;
+    height: 40px;
+}
+.SingleBlogBox{
+    margin-bottom: 0;
+}
+.mobilezeroPadding{
+    padding: 0;
+}
+.BlogleaveCOmment{
+    padding:0 15px
+}
+.dashNavItem{
+    display: none;
+}
+.tablesCont{
+    margin:0
+}
+.order-DetailsBox {
+    min-width: 220%;
+}
+.orderHistory{
+    min-width: 200%;
 }
 }

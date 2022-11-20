@@ -3292,10 +3292,21 @@ textarea {
     position: relative;
 }
 
-.FilterList .searchFilter i {
+.searchFilter{
+    border-bottom: 1px solid #E6E6E6;
+    margin-bottom: 0;
+    position: relative;
+    margin-bottom: 12px;
+}
+.searchFilter .form-control{
+    height: 49px;
+    margin-bottom: 28px
+}
+ .searchFilter i {
     position: absolute;
     top: 17px;
     left: 14px;
+    margin-right: 10px;
 }
 
 .blogContent .radioBtnContainer span {
@@ -3419,7 +3430,7 @@ textarea {
 .blogDetails p {
     font-weight: 400;
     font-size: 16px;
-    color: #1A1A1A;
+    color: #808080;
 
 }
 
@@ -4260,10 +4271,10 @@ table {
     padding: 0 14px;
     padding-bottom: 14px;
 }
-
-.order-DetailsBox {
+.showOrder-detailsBox{
     display: none;
 }
+
 
 .changeSettingsForm {
     padding: 24px 30px
@@ -4575,4 +4586,7 @@ table {
     font-weight: 500;
 font-size: 14px;
 opacity: .5;
+}
+.showDashBoardItem{
+    display: none;
 }

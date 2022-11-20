@@ -192,12 +192,12 @@ $(document).ready(function () {
     }
   });
   $(".backBtn").click(function () {
-    $(".order-DetailsBox").css("display", "none");
-    $(".orderHistory").css("display", "block");
+    $(".showOrder-detailsBox").css("display", "none");
+    $(".order-historyBox").css("display", "block");
   });
   $(".viewproductDetailsBtn").click(function () {
-    $(this).closest(".orderHistory").css("display", "none");
-    $(".order-DetailsBox").css("display", "block");
+    $(this).closest(".table-responsive").css("display", "none");
+    $(".showOrder-detailsBox").css("display", "block");
   })
 
   $('.faqHeader').click(function () {
@@ -211,6 +211,9 @@ $(document).ready(function () {
   })
   $(".mobileFilter").click(function () {
     $(".FilterList").slideToggle(400)
+  });
+  $(".showDashBoardItem").click(function () {
+    $(".dashNavItem").slideToggle(400)
   });
   if ($(window).width() < 850) {
     $("#productViewSlider").owlCarousel({
