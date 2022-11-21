@@ -201,6 +201,7 @@ $(document).ready(function () {
   })
 
   $('.faqHeader').click(function () {
+    
     $(this).closest(".faqContent").find('.plusMinus i').toggleClass('fa-minus fa-plus');
     $(this).closest(".faqContent").find('.faqbody').slideToggle(400);
     $(this).closest(".faqContent").toggleClass("active")
