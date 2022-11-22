@@ -149,7 +149,11 @@ $(document).ready(function () {
   })
 
   $(".cartClick").click(function () {
-    if ($(window).width() > 850) {
+    if ($(window).width() > 810 && $(window).width() < 1200) {
+      $(".shopMenu").css("right", "-41%");
+    }
+
+    else if ($(window).width() > 1200) {
       $(".shopMenu").css("right", "-100%");
     }
     else {
@@ -201,7 +205,7 @@ $(document).ready(function () {
   })
 
   $('.faqHeader').click(function () {
-    
+
     $(this).closest(".faqContent").find('.plusMinus i').toggleClass('fa-minus fa-plus');
     $(this).closest(".faqContent").find('.faqbody').slideToggle(400);
     $(this).closest(".faqContent").toggleClass("active")

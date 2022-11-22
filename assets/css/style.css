@@ -68,6 +68,9 @@ p {
 .headerContactInfo {
     float: right;
 }
+.headerContactInfo.conttactHeaderInfo{
+    float: left;
+}
 
 .headerContactInfo li {
     margin-right: 73px;
@@ -3361,6 +3364,10 @@ textarea {
     float: none;
 }
 
+.recentlyAddedListDetails  i{
+    color:var(--secondMainColor);
+    font-size: 11px;
+}
 .recentlyAddedListDetails span {
     font-weight: 400;
     font-size: 14px;

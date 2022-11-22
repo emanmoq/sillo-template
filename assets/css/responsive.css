@@ -16,6 +16,7 @@
         position: relative;
         overflow: hidden;
         padding: 0;
+        margin: 20px 0
     }
 
     .offersAdvertisement:before {
@@ -200,7 +201,7 @@
         position: absolute;
         left: -200px;
         padding: 10px;
-        z-index: 33333;
+        z-index: 222;
         top: -55px;
         opacity: 0;
         height: 100vh !important;
@@ -338,7 +339,8 @@
         display: none;
     }
 
-    .mobileFilter,.showDashBoardItem {
+    .mobileFilter,
+    .showDashBoardItem {
         display: block;
         float: right;
         color: white
@@ -402,11 +404,6 @@
         display: flex !important;
     }
 
-    #productViewSlider.owl-carousel .owl-nav .owl-next {
-        bottom: auto;
-        left: 0;
-        right: auto;
-    }
 
     #productViewSlider.owl-carousel .owl-nav .owl-next,
     #productViewSlider.owl-carousel .owl-nav .owl-prev {
@@ -414,6 +411,13 @@
         right: 0;
         left: auto;
     }
+
+    #productViewSlider.owl-carousel .owl-nav .owl-next {
+        bottom: auto;
+        left: 0;
+        right: auto;
+    }
+
 
     .producViewImage {
         width: 100%;
@@ -512,9 +516,11 @@
         font-size: 12px;
         font-weight: 600;
     }
-    .wishListItem h4{
+
+    .wishListItem h4 {
         margin-left: 6px;
     }
+
     .wishListItemImg {
         width: 50px;
         height: 50px;
@@ -553,239 +559,490 @@
         font-size: 12px;
         font-weight: 600;
     }
-    .actionsTable{
+
+    .actionsTable {
         width: 100%;
     }
-    .wishListSocial{
-        margin:0
+
+    .wishListSocial {
+        margin: 0
     }
-    .btn-number{
+
+    .btn-number {
         width: 18px;
         height: 18px;
         padding: 0;
     }
-    .mycartTable td .newPrice{
+
+    .mycartTable td .newPrice {
         font-size: 10px;
     }
-    .myCartplusMinus{
+
+    .myCartplusMinus {
         padding: 3px 5px;
     }
-    .btn-number i{
+
+    .btn-number i {
         font-size: 10px;
     }
-    #input-quantity{
+
+    #input-quantity {
         font-size: 13px;
     }
-    .input-number{
+
+    .input-number {
         width: 18px;
         height: 18px;
     }
-    .mycartTable thead tr th{
+
+    .mycartTable thead tr th {
         font-size: 10px;
         padding: 10px;
     }
-    
-element.style {
-}
-.mycartTable .wishListItem {
-    width: auto;
-}
-.mycartTable td {
-    padding:  10px ;
-}
-.mycartTable .closeCartItem{
-width: 16px;
-height: 16px;
-font-size: 13px;
-margin-right: 5px;
-}
-.returnToShop {
-    width: 102px;
-height: 32px;
-font-weight: 500;
-font-size: 10px;
-margin-top: 14px;
-margin-left: 8px;
-}
-.updateCart{
-    margin-right: 7px;
-}
-.cuponSection h5{
-    margin-bottom: 0;
-    font-weight: 600;
-    font-size: 10px;
-margin-right: 5px;}
-.cubonForm .subscribeFormControl{
-    height: 31px;
-}
-.cubonForm .subscribeFormControl::placeholder{
-    font-size: 12px;
-}
-.cubonForm .form-group{
-    margin: 0;
-}
-.cubonForm .cubonBtn{
-    width: 112px;
-    font-size: 12px;
-}
-.cubonForm{
-    height: 31px;
-}
-.faqTitle{
-    font-size: 32px;
-}
-.faqHeader a{
-    font-size: 15px;
-}
-.faqImg{
-    width: 100%;
-    margin-bottom: 34px;
-}
-.aboutPageText h4{
-    font-size: 1.25em;
-}
-.aboutPage{
-    padding:20px 0
-}
-.aboutImg{
-    margin-bottom: 23px;
-}
-.aboutSecondImg{
-    margin-top: 65px;
-}
-.contactUsPage{
-    padding: 15px 0;
-}
-.contactInfoBox{
-    padding:14px 16px;
-    margin-bottom: 20px;
-}
-.pagination{
-    margin-top: 20px;
-}
-.changeProfileImg{
-    margin:auto;
-    margin-bottom: 15px;
-}
-.changeImgBtn{
-    margin:auto
-}
-.orderHistoryTable th{
-    font-size: 12px;
-    padding: 12px 115px 12px 1px;
-}
-.orderHistoryTable th  span{
-    display: block;
-    width: 50px;
-}
-.orderHistoryTable td{
-    font-size: 14px;
-    padding:12px 5px
-}
-.editProfileHeader h4{
-    font-size: 18px;
-}
-.editProfileHeader a{
-    font-size: 16px;
-}
-.changePicImg{
-    margin-bottom: 20px;
-}
-.searchFilter {
-    margin-bottom: 0;
-    border-bottom: 0;
-}
-.SingleBlogBox .BlogBoxImg {
-height: 214px;
-}
-.socialIconsSub li i{
-    font-size: 12px
-}
-.viewProductSocial .socialIconsSub li{
-    width: 20px;
-    height: 20px;
-}
-.blogWriterImg{
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
-}
-.blogWriterName h5{
-    font-size: 12px;
-    margin-bottom: 2px;
-}
-    
-.blogWriterDate {
-    line-height: .8;
-}
-.blogWriterDate span{
-    font-size: 11px;
-}
-.SingleBlogBox h5{
-    font-size: 16px;
-}
-.BlogBigImg{
-    height:154px
-}
-.blogDetails p {
-    font-size: 12px;
-}
-.singleBlogOffer.offersAdvertisement{
-    height: 193px;
 
-    background-repeat: no-repeat;
-    margin:10px 0
+    element.style {}
+
+    .mycartTable .wishListItem {
+        width: auto;
+    }
+
+    .mycartTable td {
+        padding: 10px;
+    }
+
+    .mycartTable .closeCartItem {
+        width: 16px;
+        height: 16px;
+        font-size: 13px;
+        margin-right: 5px;
+    }
+
+    .returnToShop {
+        width: 102px;
+        height: 32px;
+        font-weight: 500;
+        font-size: 10px;
+        margin-top: 14px;
+        margin-left: 8px;
+    }
+
+    .updateCart {
+        margin-right: 7px;
+    }
+
+    .cuponSection h5 {
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 10px;
+        margin-right: 5px;
+    }
+
+    .cubonForm .subscribeFormControl {
+        height: 31px;
+    }
+
+    .cubonForm .subscribeFormControl::placeholder {
+        font-size: 12px;
+    }
+
+    .cubonForm .form-group {
+        margin: 0;
+    }
+
+    .cubonForm .cubonBtn {
+        width: 112px;
+        font-size: 12px;
+    }
+
+    .cubonForm {
+        height: 31px;
+    }
+
+    .faqTitle {
+        font-size: 32px;
+    }
+
+    .faqHeader a {
+        font-size: 15px;
+    }
+
+    .faqImg {
+        width: 100%;
+        margin-bottom: 34px;
+    }
+
+    .aboutPageText h4 {
+        font-size: 1.25em;
+    }
+
+    .aboutPage {
+        padding: 20px 0
+    }
+
+    .aboutImg {
+        margin-bottom: 23px;
+    }
+
+    .aboutSecondImg {
+        margin-top: 65px;
+    }
+
+    .contactUsPage {
+        padding: 15px 0;
+    }
+
+    .contactInfoBox {
+        padding: 14px 16px;
+        margin-bottom: 20px;
+    }
+
+    .pagination {
+        margin-top: 20px;
+    }
+
+    .changeProfileImg {
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .changeImgBtn {
+        margin: auto
+    }
+
+    .orderHistoryTable th {
+        font-size: 12px;
+        padding: 12px 115px 12px 1px;
+    }
+
+    .orderHistoryTable th span {
+        display: block;
+        width: 50px;
+    }
+
+    .orderHistoryTable td {
+        font-size: 14px;
+        padding: 12px 5px
+    }
+
+    .editProfileHeader h4 {
+        font-size: 18px;
+    }
+
+    .editProfileHeader a {
+        font-size: 16px;
+    }
+
+    .changePicImg {
+        margin-bottom: 20px;
+    }
+
+    .searchFilter {
+        margin-bottom: 0;
+        border-bottom: 0;
+    }
+
+    .SingleBlogBox .BlogBoxImg {
+        height: 214px;
+    }
+
+    .socialIconsSub li i {
+        font-size: 12px
+    }
+
+    .viewProductSocial .socialIconsSub li {
+        width: 20px;
+        height: 20px;
+    }
+
+    .blogWriterImg {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    .blogWriterName h5 {
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+
+    .blogWriterDate {
+        line-height: .8;
+    }
+
+    .blogWriterDate span {
+        font-size: 11px;
+    }
+
+    .SingleBlogBox h5 {
+        font-size: 16px;
+    }
+
+    .BlogBigImg {
+        height: 154px
+    }
+
+    .blogDetails p {
+        font-size: 12px;
+    }
+
+    .singleBlogOffer.offersAdvertisement {
+        height: 193px;
+        background-repeat: no-repeat;
+        margin: 10px 0
+    }
+
+    .singleBlogOffer.offersAdvertisement:before {
+        background-image: url(../images/background.png);
+        background-size: contain;
+    }
+
+    .advCont {
+        padding: 20px 0
+    }
+
+    .offersAdvertisement.singleBlogOffer .container {
+        padding: 0 15px;
+        background-image: none;
+    }
+
+    .offersAdvertisement:before {
+        background-color: transparent;
+
+    }
+
+    .advCont h6 {
+        font-size: 12px;
+    }
+
+    .advCont h4 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .advCont p {
+        font-size: 9px;
+        line-height: 1;
+    }
+
+    .advCont .offerBtn {
+        width: 132px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+    .commentList .blogWriterImg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .SingleBlogBox {
+        margin-bottom: 0;
+    }
+
+    .mobilezeroPadding {
+        padding: 0;
+    }
+
+    .BlogleaveCOmment {
+        padding: 0 15px
+    }
+
+    .dashNavItem {
+        display: none;
+    }
+
+    .tablesCont {
+        margin: 0
+    }
+
+    .order-DetailsBox {
+        min-width: 220%;
+    }
+
+    .orderHistory {
+        min-width: 200%;
+    }
+
+    .bestSellerBox .bestSellerBoxImg {
+        width: 100%;
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .shopMenu {
+        width: 100vw;
+    }
 }
-.singleBlogOffer.offersAdvertisement:before{
-    background-image: url(../images/background.png);
-    background-size: contain;
-}
-.advCont{
-    padding:20px 0
-}
-.offersAdvertisement .container{
-    padding:0 15px;
-    background-image: none;
-}
-.advCont h6{
-    font-size: 12px;
-}
-.advCont h4{
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-.advCont p{
-    font-size: 9px;
-    line-height: 1;
-}
-.advCont .offerBtn{
-    width: 132px;
-height: 38px;
-font-size: 16px;
-}
-.commentList .blogWriterImg{
-    width: 40px;
-    height: 40px;
-}
-.SingleBlogBox{
-    margin-bottom: 0;
-}
-.mobilezeroPadding{
-    padding: 0;
-}
-.BlogleaveCOmment{
-    padding:0 15px
-}
-.dashNavItem{
-    display: none;
-}
-.tablesCont{
-    margin:0
-}
-.order-DetailsBox {
-    min-width: 220%;
-}
-.orderHistory{
-    min-width: 200%;
-}
+
+@media(min-width:820px) and (max-width:1180px) {
+    .navbar-expand-lg {
+        flex-flow: row nowrap;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        background-color: transparent;
+        top: auto;
+        position: relative;
+        left: auto !important;
+        width: 100% !important;
+        height: auto !important;
+        opacity: 1 !important;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .navbar-expand-lg .nav-item {
+        margin: 0 8px;
+
+
+    }
+
+    .collapse .close {
+        display: none
+    }
+
+    .headerContactInfo {
+        float: right;
+    }
+
+    .FilterList,
+    .dashNavItem {
+        display: block;
+    }
+
+    .BlogBoxImg {
+        height: 200px;
+    }
+
+    .blogPageBox {
+        height: 405px;
+    }
+
+    .shopMenu {
+        width: 350px;
+    }
+
+    .mobileFilter,
+    .showDashBoardItem {
+        display: none;
+    }
+
+    .chechoutForm label span {
+        font-size: 10px;
+    }
+
+    .dashboardPills .nav-link {
+        padding: 10px 5px
+    }
+
+    .profileBox {
+        padding: 16px
+    }
+
+    .changeProfileImg {
+        width: 150px;
+        height: 150px;
+    }
+
+    .changeSettingsForm label {
+        font-size: 11px;
+    }
+
+    .form-control::placeholder {
+        font-size: 11px;
+    }
+
+    .productBox .categImg {
+        width: 100%;
+    }
+
+    .galleryFilterImg {
+        width: 100%
+    }
+
+    .recentlyAddedListDetails h6 {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .recentlyAddedListDetails span {
+        font-size: 12px;
+    }
+
+    .SingleBlogBox {
+        height: auto;
+    }
+
+    .blogDetails p {
+        font-size: 14px;
+    }
+
+    .SingleBlogBox h5 {
+        font-size: 20px;
+    }
+
+    .BlogBigImg {
+        height: 210px;
+    }
+
+    .recentlyAddedImg {
+        height: 45px;
+    }
+
+    .filterContent .recentlyAddedList li {
+        margin-bottom: 8px;
+    }
+
+    .galleryFilterImg {
+        height: 60px;
+    }
+
+    .galleryFilterImg img {
+          height: 100%;
+        object-fit: cover;
+    }
+    .recentlyAddedListDetails  i{
+        font-size: 11px;
+        
+    }
+    .FilterList li a h6{
+        line-height: 1;
+    }
+    .FilterTag{
+        font-size: 11px;
+    }
+    .FilterTagCont{
+        margin-right: 2px;
+    }
+    
+    .actionsTable{
+        width:25%;
+        margin-top: 0;
+    }
+    .widhTableHeader .oldNewPrice,.availabeCont{
+        width: 14%;
+    }.wishListItem{
+        width: 25%;
+    }
+    .wishTableBtn{
+        width: 200px;
+        margin-top: 0;
+    }
 }
