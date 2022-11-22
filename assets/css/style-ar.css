@@ -1,0 +1,807 @@
+body {
+    direction: rtl;
+    text-align: right;
+}
+.headerContactInfo {
+    float: left;
+}
+
+.headerContactInfo li {
+    margin-left: 73px;
+}
+
+
+.flagIcon {
+    margin-left: 6px;
+}
+
+.logo {
+
+    margin-left: 70px;
+}
+
+
+.searchBox .form-group i {
+
+    right: 12px;
+}
+
+.searchInput {
+    padding-right: 40px;
+}
+
+
+
+.searchBtn {
+    right: auto;
+    left: 0;
+
+}
+
+.wishCartlList li {
+
+    margin-right: 30px;
+}
+
+.wishCartlList li:last-child {
+    margin-left: 0;
+}
+
+.signList li {
+    margin-left: 25px
+}
+
+.signList li:last-child {
+    margin-left: 0;
+}
+
+.cartNum {
+    left: auto;
+    right: 9px;
+}
+
+
+.navbar-expand-lg .nav-item {
+    margin-left: 32px;
+
+}
+
+/************************ Hero Slider *********************/
+
+.carousel-item:before {
+    left: auto;
+    right: 0;
+}
+
+
+.carousel-indicators li {
+
+    margin-right: 12px;
+
+}
+
+
+.carousel-control-prev {
+    right: 35px;
+    left: auto;
+}
+
+.carousel-control-next {
+    left: 35px;
+    right: auto;
+}
+
+/******************* Categories***********************/
+
+.sectionHeader h6 {
+    float: right;
+
+}
+
+.viewLink {
+    float: left;
+}
+
+.sale,
+.bestSaletag {
+    right: 8px;
+    margin-left: 15px;
+    float: right
+}
+
+.oldNewPrice span {
+    margin-left: 5px;
+}
+
+.bag {
+    left: 0;
+    right: auto;
+
+}
+
+
+.wishItems {
+    left: auto;
+    left: 8;
+}
+
+.timeCounterDwon div span:after {
+
+    left: -15px;
+    right: auto;
+}
+
+.saleCont {
+    right: 8px;
+}
+
+.bestSellerBox .saleCont {
+    right: 24px;
+}
+
+.rateNum {
+
+    margin-right: 5px;
+}
+
+
+.addCartSellerBtn i {
+    margin-right: 5px;
+}
+
+.advCont h4 span {
+    margin-left: 5px;
+}
+
+
+.testNameDesc {
+    float: right;
+}
+
+.clientRating {
+    margin-right: auto;
+    float: left;
+}
+
+.testImg {
+
+    margin-left: 11px;
+}
+
+.testmonialCar .owl-nav {
+    right: auto;
+    left: 0;
+}
+
+
+.testmonialCar.owl-carousel .owl-nav button.owl-next {
+    left: 0;
+    right: auto;
+}
+
+.testmonialCar.owl-carousel .owl-nav button.owl-prev {
+    left: 50px;
+    right: auto;
+}
+
+.followOverlay {
+    left: 50%;
+    right: 50%;
+
+}
+
+.FollowCarItem:hover .followOverlay {
+    left: 0;
+    right: 0;
+}
+
+.subscribeBtn {
+    left: 0;
+    right: auto;
+}
+
+.socialIconsSub li {
+    margin-left: 25px;
+}
+
+.filterBtn svg {
+    margin-right: 20px
+}
+
+/**********/
+.radioBtnContainer {
+    padding-right: 28px;
+
+}
+
+/* Create a custom radio button */
+.radioBtnContainer .checkmark {
+    left: auto;
+    right: 0;
+
+}
+
+
+/* Style the indicator (dot/circle) */
+.radioBtnContainer .checkmark:after {
+    left: auto;
+    right: 3px;
+}
+
+.checkContainer .checkmark:after {
+    right: 4px;
+    left: auto;
+}
+
+
+.checkContainer .checkmark {
+    left: auto;
+    right: 0;
+
+
+}
+
+/**************************************/
+
+.FilterList a i {
+    float: left;
+}
+
+.radioBtnContainer span {
+    margin-right: 2px
+}
+
+.radioBtnContainer i {
+    margin-right: 5px;
+}
+
+
+.FilterTagCont {
+    margin-left: 14px;
+}
+
+.FilterTagCont:last-child {
+    margin-left: 0;
+}
+
+.SalesProductBox .categImg {
+    margin-left: 33px;
+}
+
+.filterHeader .selectric-select {
+    margin-right: 12px;
+
+}
+
+.filterHeader span {
+    margin-right: auto;
+}
+
+.filterHeader p {
+    float: right;
+}
+
+
+.pagination .page-item {
+    margin-right: 12px
+}
+
+
+.producViewImage {
+    float: right;
+}
+
+#productViewSlider {
+
+    float: right;
+
+    margin-left: 12px;
+}
+
+#productViewSlider.owl-carousel .owl-nav .owl-next,
+#productViewSlider.owl-carousel .owl-nav .owl-prev {
+    right: 50%;
+    left: auto;
+}
+
+.available {
+
+    margin-right: 24px
+}
+
+.viewProductRating i {
+    margin-right: 5px;
+
+}
+
+
+.viewProductRating li {
+    margin-left: 30px;
+}
+
+.viewProductPrice .old {
+    margin-left: 10px;
+}
+
+
+
+.discount {
+
+    margin-right: 10px;
+
+}
+
+
+.viewProductSocial span {
+
+    margin-left: 18px;
+}
+
+.viewProductSocial .socialIconsSub li {
+
+    margin-left: 5px;
+
+}
+
+.plusMinusProductContainer {
+    margin-left: 26px;
+}
+
+.plusMinusProductContainer .wishIcon svg path {
+    margin-right: 12px
+}
+
+.categTags h6 {
+
+    margin-left: 6px;
+}
+
+.categTags span {
+
+    margin-left: 5px;
+}
+
+.modal .close {
+    left: 20px;
+}
+
+
+.productDescDetails li:before {
+    margin-right: 5px;
+    margin-left: 8px;
+}
+
+
+
+.discoutProductSide i {
+    margin-left: 15px;
+}
+
+.custopReviewBox span {
+    text-align: left;
+    float: left;
+}
+
+
+.customerReviewDetails {
+    margin-right: 12px
+}
+
+.shopMenu {
+
+    left: -1000px;
+
+}
+
+.shopMenu h4 {
+
+    float: right;
+}
+
+
+.cartItemImg {
+    margin-left: 22px;
+}
+
+
+.cartItemDetails p span {
+
+    margin-left: 4px;
+    ;
+}
+
+.closeCart {
+    float: left;
+}
+
+
+.closeCartItem {
+    margin-right: auto;
+}
+
+.TotalItems {
+    float: right;
+}
+
+.totalItemsPrice {
+    float: left;
+}
+
+.shopMenu::-webkit-scrollbar-thumb {
+
+    border-left: none;
+    border-right: none;
+}
+
+.wishListItem h4 {
+
+    margin-right: 20px;
+}
+
+.actionsTable .close {
+    margin-right: 25px;
+}
+
+
+.viewProductSocial.wishListSocial span {
+    margin-left: 0;
+}
+
+.returnToShop {
+    margin-right: 20px;
+}
+
+
+.cubonForm .cubonBtn {
+    right: auto;
+    left: 0;
+
+}
+
+.cuponSection h5 {
+
+    margin-left: 15px;
+}
+
+
+.orderSamImg {
+
+    margin-left: 10px;
+}
+
+.order-List-summary li h6 span {
+    margin-right: 6px;
+}
+
+
+.aboutListIconImg {
+    margin-left: 16px
+}
+
+
+.awsomeTeamDetails {
+    padding-right: 20px;
+}
+
+
+
+.awsomeTeamSocial {
+
+    right: 0;
+    top: 0;
+    left: auto;
+}
+
+
+.awsomeTeamCar .owl-nav button.owl-next,
+.awsomeTeamCar .owl-nav button.owl-prev {
+    left: auto;
+    right: -67px;
+}
+
+.awsomeTeamCar .owl-nav button.owl-prev {
+    left: -67px;
+    right: auto;
+}
+
+/******************************************************************/
+
+.FilterList .searchFilter i {
+
+    right: 14px;
+    left: auto;
+}
+
+.blogContent .radioBtnContainer span {
+    float: left;
+}
+
+
+.recentlyAddedImg {
+
+    margin-left: 12px;
+}
+
+.BlogBoxImg:before {
+    left: auto;
+    right: 0;
+
+}
+
+.blogDetailsHeader li {
+    margin-left: 23px;
+}
+
+
+.blogDetailsHeader li:last-child {
+    margin-left: 0;
+}
+
+.blogDetailsHeader li i {
+    margin-left: 6px;
+}
+
+.readMoreLink i {
+    margin-right: 10px;
+}
+
+.readMoreLink:hover {
+    color: var(--main-color)
+}
+
+
+.blogImgDate {
+    left: auto;
+    right: 24px
+}
+
+.blogWriterDetails .viewProductSocial {
+    float: left;
+}
+
+.blogWriterImg {
+
+    margin-left: 12px;
+}
+
+
+.commentWriterName h5 {
+    float: right;
+}
+
+.commentWriterName .blogWriterDate {
+    float: right;
+}
+
+
+
+.showHidePass {
+    right: auto;
+    left: 3%;
+}
+
+
+.forget {
+    float: left;
+}
+
+.RememberPassword {
+    float: right;
+}
+
+.dashboardPills .nav-link i {
+    margin-left: 11px
+}
+
+.editAddress {
+    text-align: right;
+}
+
+.editAddress span {
+
+    text-align: right;
+}
+
+
+.editProfileHeader h4 {
+
+    text-align: right;
+    float: right;
+}
+
+.editProfileHeader a {
+    float: left;
+}
+
+
+.order-detailsTable th {
+    border-left: 1px solid #E6E6E6;
+}
+
+.order-detailsTable td {
+    border-left: 1px solid #E6E6E6;
+}
+
+.order-detailsPrice tbody td p {
+    text-align: left;
+}
+
+.marginTable {
+    margin-right: 15px;
+}
+
+.order-detailsPrice th:first-child .tableHeadCont {
+
+    border-left: 1px solid #E6E6E6;
+}
+
+.order-process li:before,
+.order-process li:after {
+
+    left: 37px;
+    right: auto;
+
+}
+
+.order-process li:after {
+    right: 37px;
+    left: auto;
+}
+
+.order-process li:last-child {
+    margin-left: 0;
+}
+
+.productTable-detailsImg {
+
+    margin-left: 12px;
+}
+
+#changeImg {
+    right: 0;
+    top: 0;
+    left: auto
+}
+
+.saveSett {
+    margin-right: 0;
+}
+
+.settingBox .showHidePass {
+    left: 22px;
+    right: auto;
+}
+
+.plusMinus {
+    float: left;
+}
+
+/**************/
+@media(max-width:850px) {
+    .offersAdvertisement:before {
+        left: auto;
+        right: 0;
+    }
+
+    .headerContactInfo li {
+        margin-left: 8px;
+    }
+
+    .wishCartlList li {
+        margin-right: 0
+    }
+
+    .wishCartlList li {
+        margin-left: 3px;
+    }
+
+    .wishCartlList li:last-child {
+        margin-left: 0;
+    }
+
+    .searchBox .form-group i {
+        right: 7px;
+        left: auto
+    }
+
+    .navbar-collapse .close {
+
+        left: 10px;
+        right: auto;
+    }
+
+    .collapsing {
+        left: auto;
+        right: -200px
+    }
+
+    .navbar-collapse.collapse {
+        left: auto;
+        right: -200px;
+    }
+
+    .navbar-collapse.collapse.show {
+        right: -15px;
+        opacity: 1;
+        left: auto;
+    }
+
+    .carousel-control-prev {
+        right: 19px;
+    }
+
+    .carousel-control-next {
+        left: 19px;
+    }
+
+
+    .offersSec .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .mobileFilter,
+    .showDashBoardItem {
+
+        float: left;
+    }
+
+
+
+
+    #productViewSlider.owl-carousel .owl-nav .owl-next,
+    #productViewSlider.owl-carousel .owl-nav .owl-prev {
+        left: 0;
+        right: auto;
+    }
+
+    #productViewSlider.owl-carousel .owl-nav .owl-next {
+        right: 0;
+        left: auto;
+    }
+
+    #productViewSlider .owl-nav {
+        text-align: right;
+    }
+    .productCol {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .headerCon {
+        margin-left: 3px;
+    }
+
+    .mycartTable .closeCartItem {
+        margin-left: 5px;
+    }
+
+
+    .updateCart {
+        margin-left: 7px;
+    }
+
+    .cuponSection h5 {
+
+        margin-left: 5px;
+    }
+
+    .blogWriterImg {
+    
+        margin-left: 5px;
+    }
+}
+
+@media(min-width:820px) and (max-width:1180px) {
+
+    .navbar-expand-lg .navbar-collapse {
+
+        right: auto !important;
+    }
+    .headerContactInfo {
+        float: left;
+    }
+    .FilterTagCont {
+        margin-left: 2px;
+    }
+}
